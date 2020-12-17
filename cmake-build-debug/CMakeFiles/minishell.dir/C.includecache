@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/schips/Desktop/minishell/SRCS/commands/ft_echo.c
+../shell_header.h
+/Users/schips/Desktop/minishell/SRCS/shell_header.h
+
+/Users/schips/Desktop/minishell/SRCS/shell_header.h
+string.h
+-
+structures.h
+/Users/schips/Desktop/minishell/SRCS/structures.h
+../my_libft/libft.h
+/Users/schips/Desktop/minishell/my_libft/libft.h
+unistd.h
+-
+errno.h
+-
+dirent.h
+-
+fcntl.h
+-
+
+/Users/schips/Desktop/minishell/SRCS/structures.h
+
+/Users/schips/Desktop/minishell/my_libft/libft.h
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+
