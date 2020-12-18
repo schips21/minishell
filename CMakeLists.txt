@@ -73,6 +73,7 @@ add_executable(minishell
         SRCS/commands/ft_pwd.c
         SRCS/commands/ft_export.c
         SRCS/commands/ft_unset.c
+        SRCS/commands/ft_exit.c
         SRCS/commands/ft_export_2.c
         SRCS/commands/ft_other_commands.c
         SRCS/commands/ft_other_commands_2.c

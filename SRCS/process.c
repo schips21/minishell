@@ -46,27 +46,35 @@ int		command_execution(t_info *info, t_env *env)
 {
 	int res;
 
-	if (ft_strncmp(info->args[0], "cd", 3) == 0)
-		res = ft_cd(info, env, 1);
-	else if (ft_strncmp(info->args[0], "pwd", 4) == 0)
-		res = ft_pwd(info, env, info->out);
-	else if (ft_strncmp(info->args[0], "export", 7) == 0)
-		res = ft_export(info, env, info->out);
-	else if (ft_strncmp(info->args[0], "unset", 6) == 0)
-		res = ft_unset(info, env);
-	else if (ft_strncmp(info->args[0], "env", 4) == 0)
-		ft_env(env, info->out);
-	else if (ft_strncmp(info->args[0], "echo", 5) == 0)
-		ft_echo(info);
-	else
-		res = ft_other_commands(info, env);
-//	else if (ft_strncmp(info->args[0], "exit", 5) == 0)
-//		res = ft_exit(info);
+	if (info->args)
+	{
+		if (ft_strncmp(info->args[0], "cd", 3) == 0)
+			res = ft_cd(info, env, 1);
+		else if (ft_strncmp(info->args[0], "pwd", 4) == 0)
+			res = ft_pwd(info, env, info->out);
+		else if (ft_strncmp(info->args[0], "export", 7) == 0)
+			res = ft_export(info, env, info->out);
+		else if (ft_strncmp(info->args[0], "unset", 6) == 0)
+			res = ft_unset(info, env);
+		else if (ft_strncmp(info->args[0], "env", 4) == 0)
+			ft_env(env, info->out);
+		else if (ft_strncmp(info->args[0], "echo", 5) == 0)
+			ft_echo(info);
+		else if (ft_strncmp(info->args[0], "exit", 5) == 0)
+			ft_exit(info);
+//			res = ft_exit(info);
+		else
+			res = ft_other_commands(info, env);
+
 //	else
 //		//res = обработка встроенных функций
 //		res == -1 -> ошибка
 //		res == -2 -> функция не найдена
 //	*
+
+	}
+
+
 	return (0);
 }
 /*предполгается, что redirs есуществует и содержит хотя бы один элемент*/

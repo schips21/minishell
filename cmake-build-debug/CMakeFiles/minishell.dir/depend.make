@@ -21,6 +21,11 @@ CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o: ../SRCS/structures.h
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o: ../my_libft/libft.h
 
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../SRCS/commands/ft_exit.c
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../SRCS/shell_header.h
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../SRCS/structures.h
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../my_libft/libft.h
+
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o: ../SRCS/commands/ft_export.c
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o: ../SRCS/structures.h

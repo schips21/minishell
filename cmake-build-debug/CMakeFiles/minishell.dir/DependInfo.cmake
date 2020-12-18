@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o"
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_echo.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o"
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_env.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o"
+  "/Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_export.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o"
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_export_2.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
   "/Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"

@@ -115,7 +115,8 @@ int		make_type(t_info *parsed, int n_flag)
 	if (!(new = malloc(sizeof(char *) * (i))))
 		return (0);
 	new[i - 1] = NULL;
-	j = 0;
+	new[0] =  parsed->args[0];
+	j = 1;
 	while (j < i - 1)
 	{
 		new[j] = parsed->args[j + 1];

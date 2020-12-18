@@ -24,6 +24,8 @@ int		ft_pwd(t_info *info, t_env *env, int fd)
 		return (-1);
 	}
 	ft_putendl_fd(pwd, fd);
+	if (pwd)
+		free(pwd);
 	return (0);
 }
 

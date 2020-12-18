@@ -34,10 +34,6 @@ char	*pars_dollar_create_env(char *line, int *i, int count);
 char	*pars_dollar(char *line, int *i);
 void	pars_dollar_env(t_info *parsed, t_env *env, int arg_i, char *env_str);
 
-
-
-
-
 /* Shell functions */
 void	ft_echo(t_info *info);
 int		ft_pwd(t_info *info, t_env *env, int fd);
@@ -45,12 +41,14 @@ int		ft_cd(t_info *info, t_env *env, int fd);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
 void	ft_env(t_env *env, int fd);
+void	ft_exit(t_info *info);
 
 /* Ready structures for commands */
 t_info	*get_info_echo(void);
 t_info	*get_info_pwd(void);
 t_info	*get_info_cd(void);
 t_info	*get_info_export(void);
+
 
 /*Main process */
 int		process(t_env *env, t_info *info);

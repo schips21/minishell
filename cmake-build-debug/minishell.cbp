@@ -94,6 +94,9 @@
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/commands/ft_env.c">
 			<Option target="minishell"/>
 		</Unit>
+		<Unit filename="/Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c">
+			<Option target="minishell"/>
+		</Unit>
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/commands/ft_export.c">
 			<Option target="minishell"/>
 		</Unit>

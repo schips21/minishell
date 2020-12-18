@@ -10,6 +10,7 @@ void	two_quot(char *line, t_info *parsed, int arg_i, int *i)
 			(*i)++;
 			new_letter(parsed, arg_i, line[(*i)++]);
 		}
+
 //		else if (line[i] == '$')
 //		условие про доллар
 		else
@@ -17,23 +18,6 @@ void	two_quot(char *line, t_info *parsed, int arg_i, int *i)
 	}
 	(*i)++;
 }
-
-//void	parse_echo_n(t_info *parsed)
-//{
-//	int i;
-//
-//	i = 0;
-//	if (parsed->args[0][i] == '-')
-//	{
-//		i++;
-//		while (parsed->args[0][i] == 'n' && parsed->args[0][i] != '\0')
-//			i++;
-//		if (parsed->args[0][i] == '\0')
-//			parsed->n_flag = 1;
-//	}
-//	if (parsed->n_flag == 1)
-//		make_type(parsed, 1);
-//}
 
 void	parse_echo_n(t_info *parsed)
 {
@@ -49,7 +33,10 @@ void	parse_echo_n(t_info *parsed)
 			parsed->n_flag = 1;
 	}
 	if (parsed->n_flag == 1)
+	{
 		make_type(parsed, 1);
+		parsed->args_num--;
+	}
 }
 
 void	count_args(t_info *parsed)

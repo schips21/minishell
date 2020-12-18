@@ -15,17 +15,17 @@
 void	ft_echo(t_info *info)
 {
 	int	i;
-	int	fd;
 
-	fd = 1;
 	i = 1;
-	while (i < info->args_num - 1)
+	while (i < info->args_num + 1)
 	{
-		ft_putendl_fd((info->args)[i], fd);
+		ft_putstr_fd((info->args)[i], info->out);
+		if (i == info->args_num && info->n_flag == 0)
+			ft_putchar_fd('\n', info->out);
+		else if (i != info->args_num)
+			ft_putchar_fd(' ', info->out);
 		i++;
 	}
-	if (i < info->args_num)
-		ft_putstr_fd((info->args)[i], fd);
 	if (info->args_num == 0 && info->n_flag == 0)
-		ft_putchar_fd('\n', fd);
+		ft_putchar_fd('\n', info->out);
 }

@@ -870,9 +870,22 @@ CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_unset.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s
 
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: CMakeFiles/minishell.dir/flags.make
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../SRCS/commands/ft_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c
+
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c > CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i
+
+CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s
+
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o: ../SRCS/commands/ft_export_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_export_2.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.i: cmake_force
@@ -885,7 +898,7 @@ CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s: cmake_force
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o: ../SRCS/commands/ft_other_commands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.i: cmake_force
@@ -898,7 +911,7 @@ CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.s: cmake_force
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o: ../SRCS/commands/ft_other_commands_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands_2.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.i: cmake_force
@@ -911,7 +924,7 @@ CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.s: cmake_force
 
 CMakeFiles/minishell.dir/SRCS/env/env.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env.c.o: ../SRCS/env/env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/minishell.dir/SRCS/env/env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/minishell.dir/SRCS/env/env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env.c
 
 CMakeFiles/minishell.dir/SRCS/env/env.c.i: cmake_force
@@ -924,7 +937,7 @@ CMakeFiles/minishell.dir/SRCS/env/env.c.s: cmake_force
 
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.o: ../SRCS/env/env_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env_2.c
 
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.i: cmake_force
@@ -937,7 +950,7 @@ CMakeFiles/minishell.dir/SRCS/env/env_2.c.s: cmake_force
 
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.o: ../SRCS/env/env_change.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_change.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env_change.c
 
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.i: cmake_force
@@ -1011,6 +1024,7 @@ minishell_OBJECTS = \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o" \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o" \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o" \
+"CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o" \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o" \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o" \
 "CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o" \
@@ -1082,6 +1096,7 @@ minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o
+minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o
@@ -1090,7 +1105,7 @@ minishell: CMakeFiles/minishell.dir/SRCS/env/env_2.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/env/env_change.c.o
 minishell: CMakeFiles/minishell.dir/build.make
 minishell: CMakeFiles/minishell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking C executable minishell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable minishell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minishell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

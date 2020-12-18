@@ -251,6 +251,33 @@ SRCS/commands/ft_env.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.s
 .PHONY : SRCS/commands/ft_env.c.s
 
+SRCS/commands/ft_exit.o: SRCS/commands/ft_exit.c.o
+
+.PHONY : SRCS/commands/ft_exit.o
+
+# target to build an object file
+SRCS/commands/ft_exit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o
+.PHONY : SRCS/commands/ft_exit.c.o
+
+SRCS/commands/ft_exit.i: SRCS/commands/ft_exit.c.i
+
+.PHONY : SRCS/commands/ft_exit.i
+
+# target to preprocess a source file
+SRCS/commands/ft_exit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i
+.PHONY : SRCS/commands/ft_exit.c.i
+
+SRCS/commands/ft_exit.s: SRCS/commands/ft_exit.c.s
+
+.PHONY : SRCS/commands/ft_exit.s
+
+# target to generate assembly for a file
+SRCS/commands/ft_exit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s
+.PHONY : SRCS/commands/ft_exit.c.s
+
 SRCS/commands/ft_export.o: SRCS/commands/ft_export.c.o
 
 .PHONY : SRCS/commands/ft_export.o
@@ -1973,6 +2000,9 @@ help:
 	@echo "... SRCS/commands/ft_env.o"
 	@echo "... SRCS/commands/ft_env.i"
 	@echo "... SRCS/commands/ft_env.s"
+	@echo "... SRCS/commands/ft_exit.o"
+	@echo "... SRCS/commands/ft_exit.i"
+	@echo "... SRCS/commands/ft_exit.s"
 	@echo "... SRCS/commands/ft_export.o"
 	@echo "... SRCS/commands/ft_export.i"
 	@echo "... SRCS/commands/ft_export.s"

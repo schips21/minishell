@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o"
   "CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o"
   "CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o"
+  "CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
   "CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o"
   "CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
   "CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
