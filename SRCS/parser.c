@@ -1,7 +1,5 @@
 #include "shell_header.h"
 
-//Обработать доллар в двойных кавычках
-
 int		parser(char *line, t_info *parsed, t_env *env)
 {
 	int i;
@@ -27,7 +25,10 @@ int		parser(char *line, t_info *parsed, t_env *env)
 				i++;
 			}
 			else if (line[i] == '\"')
-				two_quot(line, parsed, arg_i, &i);
+			{
+				parsed->arg_i = arg_i;
+				two_quot(line, parsed, &i, env);
+			}
 			else if (line[i] == '$')
 				pars_dollar_env(parsed, env, arg_i, pars_dollar(line, &i));
 			else if (line[i] == '\\')
@@ -86,20 +87,20 @@ int main(int argc, char **argv, char *envp[])
 		parsed.in = 0;
 		parsed.out = 1;
 		parsed.envp = envp;
-//		process(env, &parsed);
+		process(env, &parsed);
 
 		if (parsed.args)
 		{
-			printf("%s%d%s\n", "THERE ARE ", parsed.args_num, " ARGS");
-			printf("%s%s\n", "TYPE IS: ", parsed.args[0]);
-			if (parsed.n_flag == 1)
-				printf("%s\n", "ECHO HAS -n FLAG");
-			j = 1;
-			while (parsed.args[j])
-			{
-				printf("%s%d%s%s\n", "ARG ", j - 1, " IS: ", parsed.args[j]);
-				j++;
-			}
+//			printf("%s%d%s\n", "THERE ARE ", parsed.args_num, " ARGS");
+//			printf("%s%s\n", "TYPE IS: ", parsed.args[0]);
+//			if (parsed.n_flag == 1)
+//				printf("%s\n", "ECHO HAS -n FLAG");
+//			j = 1;
+//			while (parsed.args[j])
+//			{
+//				printf("%s%d%s%s\n", "ARG ", j - 1, " IS: ", parsed.args[j]);
+//				j++;
+//			}
 			j = 0;
 			while (parsed.args[j])
 				free(parsed.args[j++]);
@@ -107,16 +108,16 @@ int main(int argc, char **argv, char *envp[])
 		}
 		if (parsed.redirs)
 		{
-			printf("%s\n", "REDIRECTS ARE:");
-			j = 0;
-			while (parsed.redirs[j])
-				printf("%s\n", parsed.redirs[j++]);
+//			printf("%s\n", "REDIRECTS ARE:");
+//			j = 0;
+//			while (parsed.redirs[j])
+//				printf("%s\n", parsed.redirs[j++]);
 			j = 0;
 			while (parsed.redirs[j])
 				free(parsed.redirs[j++]);
 			free(parsed.redirs);
 		}
-		printf("%s%d\n\n", "PIPE IS: ", parsed.pipe);
+//		printf("%s%d\n\n", "PIPE IS: ", parsed.pipe);
 
 	}
 	if(line)

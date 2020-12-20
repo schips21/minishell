@@ -42,15 +42,13 @@ int			redirect_processing(t_info *info)
 			redirect_processing_out(info, i);
 		else if (info->redirs[i][0] == '<')
 			redirect_processing_in(info, i);
-		else
-			ft_putendl_fd("Something is wrong with redirect array", 1); //после отладки можно убрать условие
 		i = i+2;
 		if (errno != 0 && info->redirs[i] != NULL)
 		{
 			ft_putstr_fd(info->redirs[i+1], 1);
 			ft_putstr_fd(": ", 1);
 			ft_putendl_fd(strerror(errno), 1);
-			return (-1);
+			return (errno);
 		}
 	}
 	return (0);

@@ -1,6 +1,6 @@
 #include "shell_header.h"
 
-void	two_quot(char *line, t_info *parsed, int arg_i, int *i)
+void	two_quot(char *line, t_info *parsed, int *i, t_env *env)
 {
 	(*i)++;
 	while (line[*i] != '\"')
@@ -8,13 +8,12 @@ void	two_quot(char *line, t_info *parsed, int arg_i, int *i)
 		if (line[*i] == '\\' && (line[*i + 1] == '\\' || line[*i + 1] == '\"' || line[*i + 1] == '$'))
 		{
 			(*i)++;
-			new_letter(parsed, arg_i, line[(*i)++]);
+			new_letter(parsed, parsed->arg_i, line[(*i)++]);
 		}
-
-//		else if (line[i] == '$')
-//		условие про доллар
+		else if (line[*i] == '$')
+			pars_dollar_env(parsed, env, parsed->arg_i, pars_dollar(line, i));
 		else
-			new_letter(parsed, arg_i, line[(*i)++]);
+			new_letter(parsed, parsed->arg_i, line[(*i)++]);
 	}
 	(*i)++;
 }

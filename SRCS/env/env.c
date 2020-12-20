@@ -54,8 +54,6 @@ t_env		*ft_envnew(void *type, void *value, int class)
 {
 	t_env	*new;
 
-	/*if (type == NULL || value == NULL)
-		return (free_other(type, value));*/
 	new = (t_env *)malloc(sizeof(t_env));
 	if (new)
 	{

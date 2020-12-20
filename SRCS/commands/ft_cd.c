@@ -26,24 +26,67 @@ char	*find_env(t_env *env, char *type)
 	return (NULL);
 }
 
-int		ft_cd(t_info *info, t_env *env, int fd)
-{
-	int	res;
+/*при изменении cd, появляется переменная oldpwd
+меняется pwd
+если pwd или oldpwd во время предыщих команд были удалены, они появятся вновь*/
 
+int		cd_error()
+{
+	ft_putstr_fd("minishell: cd: ", 1);
+	ft_putendl_fd(strerror(errno), 1);
+	return (errno);
+}
+
+int		ch_pwd(t_env *env)
+{
+	while (env != NULL)
+	{
+		if(ft_strncmp(env->type, "PWD", 4) == 0)
+		{
+			free(env->value);
+			env->value = getcwd(NULL, 0);
+			if (errno != 0)
+				cd_error();
+			return (errno);
+		}
+		env = env->next;
+	}
+	return (0);
+}
+
+int		ft_cd(t_info *info, t_env *env)
+{
+	int		res;
+	char	*old_pwd;
+	t_env	*env_old_pwd;
+
+	if ((env_old_pwd = find_env_env(env, "OLDPWD")) != NULL)
+	{
+		old_pwd = getcwd(NULL, 0); //malloc
+		if (old_pwd == NULL)
+			return (cd_error());
+		env_old_pwd->class = 1;
+		if (env_old_pwd->value != NULL)
+			free(env_old_pwd->value);
+		env_old_pwd->value = old_pwd;
+	}
 	if (info->args_num == 0)
 		res = chdir(find_env(env, "HOME"));
 	else
 		chdir(info->args[1]);
 	if (errno != 0)
 	{
-		ft_putstr_fd("cd: ", fd);
+		free(old_pwd);
+		ft_putstr_fd("minishell: cd: ", 1);
 		if (res == -1)
-			ft_putstr_fd("HOME not set", fd);
+			ft_putendl_fd("HOME not set", 1);
 		else
-			ft_putstr_fd(strerror(errno), 1);
-		ft_putchar_fd('\n', fd);
-		return (-1);
+		{
+			ft_putstr_fd(info->args[1], 1);
+			ft_putstr_fd(": ", 1);
+			ft_putendl_fd(strerror(errno), 1);
+		}
+		return (errno);
 	}
 	return (ch_pwd(env));
 }
-//в приницпе можно делать только с erno, но пусть так

@@ -6,12 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/Users/schips/Desktop/minishell/SRCS/commands/ft_pwd.c
+/Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c
 ../shell_header.h
 /Users/schips/Desktop/minishell/SRCS/shell_header.h
 
-/Users/schips/Desktop/minishell/SRCS/parser.c
-shell_header.h
+/Users/schips/Desktop/minishell/SRCS/env/env.c
+../shell_header.h
+/Users/schips/Desktop/minishell/SRCS/shell_header.h
+
+/Users/schips/Desktop/minishell/SRCS/env/env_2.c
+../shell_header.h
+/Users/schips/Desktop/minishell/SRCS/shell_header.h
+
+/Users/schips/Desktop/minishell/SRCS/env/env_change.c
+../shell_header.h
 /Users/schips/Desktop/minishell/SRCS/shell_header.h
 
 /Users/schips/Desktop/minishell/SRCS/shell_header.h

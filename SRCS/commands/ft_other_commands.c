@@ -1,10 +1,6 @@
 #include "../shell_header.h"
 
-int			error_errno(int err, int fd)
-{
-	ft_putendl_fd(strerror(err), fd);
-	return (-1);
-}
+
 
 void		free_arr(char **array)
 {
@@ -43,6 +39,7 @@ char		**from_env_to_array(t_env *env)
 	char	**envp;
 	int		i;
 
+	i = 0;
 	envp = malloc((sizeof(char **)) * (env_len_class_1(env) + 1));
 	if (envp == NULL)
 		return (NULL);
@@ -67,35 +64,49 @@ char		**from_env_to_array(t_env *env)
 	return (envp);
 }
 
+int			error_errno(t_info *info)
+{
+	ft_putstr_fd("minishell: ", 1);
+	ft_putstr_fd(info->args[0], 1);
+	ft_putstr_fd(": ", 1);
+	ft_putendl_fd(strerror(errno), 1);
+	return (errno);
+}
+
+int		other_error(t_info *info)
+{
+	ft_putstr_fd("minishell: ", 1);
+	ft_putstr_fd(info->args[0], 1);
+	ft_putendl_fd(": command not found", 1);
+	//ft_putendl_fd(strerror(errno), 1);
+	return (errno);
+}
+
 int			excex_command(char *command, t_env *env, t_info *info)
 {
 	pid_t	pid;
 	int		ret;
 	char	**envp;
 
-	//envp = from_env_to_array(env);
+	envp = from_env_to_array(env);
 	ret = 1;
-	printf("%s\n", command);
+	//printf("%s\n", command);
 	pid = fork();
 	if (pid == 0)
 	{
-		if ((execve(command, info->args, info->envp)) == -1)
-		{
-			printf("execvve\n");
-			return (-1);
-		}
+		if ((execve(command, info->args, envp)) == -1)
+			return (other_error(info));
 		exit(ret);
 	}
 	else if (pid < 0)
-		return (-1);
+		return (error_errno(info));
 	else
 	{
 		//родительский процесс
 		ret = 1;
 		waitpid(pid, &ret, 0);
 	}
-	
-	printf("%s\n", command);
+	//printf("%s\n", command);
 	return (0);
 }
 
@@ -124,12 +135,15 @@ int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr)
 	char			*full_path;
 
 	i = 0;
-	while ((path_arr[i]) && (new = opendir(path_arr[i])) && errno == 0) //closedir
+	while ((path_arr[i]) && errno == 0)
 	{
-		if ((if_file_here(info, new)) == 1)
+		new = opendir(path_arr[i]);
+		if (errno != 0)
+			errno = 0;
+		else if ((if_file_here(info, new)) == 1)
 		{
 			if ((full_path = ft_strjoin_path(path_arr[i], info->args[0])) == NULL)	//malloc
-				return (-1);
+				return (errno);
 			i = excex_command(full_path, env, info);
 			free(full_path);
 			return (i);
@@ -137,8 +151,8 @@ int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr)
 		i++;
 	}
 	if (errno != 0)
-		return (-1);
-	printf("no directory in path\n");
+		return (error_errno(info));
+	//printf("no directory in path\n");
 	return (excex_command(info->args[0], env, info));
 }
 
@@ -153,10 +167,12 @@ int			ft_other_commands(t_info *info, t_env *env)
 		return (excex_command(info->args[0], env, info));
 	path_arr = ft_split(path, ':');
 	if (path_arr == NULL)
-		return (error_errno(errno, 1));
+		return (error_errno(info));
+		//return (error_errno(errno, 1));
 	res = ft_other_commands_2(info, env, path_arr);
 	free_arr(path_arr);
-	if (errno != 0)
-		return (error_errno(errno, 1));
+	//if (errno != 0)
+		//return (other_error(info));
+		//return (error_errno(errno, 1));
 	return (res);
 }

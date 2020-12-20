@@ -30,6 +30,7 @@ t_env		*get_env(char **envp, t_env *first)
 {
 	t_env	*env;
 	int		count;
+	char	*old_pwd;
 
 	count = 0;
 	first = get_env_type_value(envp, count);
@@ -43,6 +44,20 @@ t_env		*get_env(char **envp, t_env *first)
 			return (free_env(first));
 		ft_lstenv_back(&first, env);
 		count++;
+	}
+	if ((find_env_env(first, "OLDPWD")) == NULL)
+	{
+		printf("yes\n");
+		old_pwd = ft_strdup("OLDPWD");
+		if (old_pwd == NULL)
+			return (free_env(first));
+		env = ft_envnew(old_pwd, NULL, 2);
+		if (env == NULL)
+		{
+			free(old_pwd);
+			return (free_env(first));
+		}
+		ft_lstenv_back(&first, env);
 	}
 	return (first);
 }

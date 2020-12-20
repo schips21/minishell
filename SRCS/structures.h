@@ -11,6 +11,7 @@ typedef struct			s_info
 	char				**redirs;
 	int					cur_i;
 	int					pipe;
+	int					arg_i;
 
 	char				**envp;
 }						t_info;

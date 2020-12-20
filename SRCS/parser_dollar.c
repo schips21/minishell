@@ -34,9 +34,13 @@ char	*pars_dollar(char *line, int *i)
 void	pars_dollar_env(t_info *parsed, t_env *env, int arg_i, char *env_str)
 {
 	char	*path_env;
+	char	*finded_end;
 	int		i;
 
-	path_env = ft_strdup(find_env(env, env_str));
+	path_env = NULL;
+	finded_end = find_env(env, env_str);
+	if (finded_end)
+		path_env = ft_strdup(finded_end);
 	free (env_str);
 	i = 0;
 	if (path_env)

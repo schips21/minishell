@@ -1,39 +1,100 @@
 #include "../shell_header.h"
 
-void	export_error(char *err, int fd)
+int	export_error(char *err, int fd, int i)
 {
-	ft_putstr_fd("export: `", fd);
-	ft_putstr_fd(err, fd);
-	ft_putstr_fd("': not a valid identifier\n", fd);
+	if (i == 1)
+	{
+		ft_putstr_fd("minishell: export: `", fd);
+		ft_putstr_fd(err, fd);
+		ft_putstr_fd("': not a valid identifier\n", fd);
+		return (1);
+	}
+	ft_putstr_fd("minishell: export: ", 1);
+	ft_putendl_fd(strerror(errno), 1);
+	return (errno);
 }
 
-void	new_var(t_env *env, char *str)
+t_env	*find_env_env(t_env *env, char *type)
 {
-	char 	*type;
-	char 	*value;
+	int	len;
+
+	while (env != NULL)
+	{
+		len = ft_strlen(type);
+		if(ft_strncmp(env->type, type, len) == 0)
+			return (env);
+		env = env->next;
+	}
+	return (NULL);
+}
+
+void	new_var_2(t_env *new, char *str)
+{
 	char	*i;
-	t_env	*new;
-	
+
+	free(new->value);
 	if (ft_strchr(str, '=') != NULL)
 	{
-		type = ft_strdup_sp(str, '=');
 		i = ft_strchr(str, '=') + 1;
-		value = ft_strdup(i);
-		new = ft_envnew(type, value, 1);	
+		new->value = ft_strdup(i);
+		new->class = 1;
 	}
 	else
 	{
-		type = ft_strdup(str);
+		new->value = NULL;
+		new->class = 2;
+	}
+}
+
+void		new_var_3(char *str, char *type, t_env *env)
+{
+	char	*value;
+	t_env	*new;
+	char	*i;
+
+	if (ft_strchr(str, '=') != NULL)
+	{
+		i = ft_strchr(str, '=') + 1;
+		value = ft_strdup(i);
+		if ((new = ft_envnew(type, value, 1)) == NULL)
+			free_other(type, value);
+	}
+	else
+	{
 		value = NULL;
-		new = ft_envnew(type, value, 2);
+		if ((new = ft_envnew(type, value, 2)) == NULL)
+			free_other(type, value);
 	}
 	ft_lstenv_back(&env, new);
+}
+
+int			new_var(t_env *env, char *str)
+{
+	char 	*type;
+	t_env	*new;
+	
+	if (ft_strchr(str, '=') != NULL)
+		type = ft_strdup_sp(str, '=');
+	else
+		type = ft_strdup(str);
+	if (type == NULL)
+		return (errno);
+	if ((new = find_env_env(env, type)) != NULL)
+	{
+		free(type);
+		new_var_2(new, str);
+	}
+	else
+		new_var_3(str, type, env);
+	return (errno);
 }
 
 int		ft_export(t_info *info, t_env *env, int fd)
 {
 	int	i;
+	int	res;
 
+	res = 0;
 	if (info->args_num == 0)
 		simple_export(env, fd);
 	else
@@ -42,16 +103,13 @@ int		ft_export(t_info *info, t_env *env, int fd)
 		while (info->args[i] != NULL)
 		{
 			if (ft_isalpha(info->args[i][0]) == 0)
-				export_error(info->args[i], 1);
+				res = export_error(info->args[i], 1, 1);
 			else
-				new_var(env, info->args[i]);
+				errno = new_var(env, info->args[i]);
 			i++;
 		}
 		if (errno != 0)
-		{
-			ft_putendl_fd(strerror(errno), 1);
-			return(-1);
-		}
+			return (export_error(info->args[i], 1, 2));
 	}
-	return (0);
+	return (res);
 }

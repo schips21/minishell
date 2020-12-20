@@ -12,20 +12,19 @@
 
 #include "../shell_header.h"
 
-int		ft_pwd(t_info *info, t_env *env, int fd)
+int		ft_pwd(t_info *info)
 {
 	char	*pwd;
 
 	pwd = getcwd(NULL, 0);
 	if (errno != 0)
 	{
-		printf("error");
-		ft_putendl_fd(strerror(errno), fd);
-		return (-1);
+		ft_putstr_fd("minishell: pwd: ", 1);
+		ft_putendl_fd(strerror(errno), 1);
+		return (errno);
 	}
-	ft_putendl_fd(pwd, fd);
+	ft_putendl_fd(pwd, info->out);
 	if (pwd)
 		free(pwd);
 	return (0);
 }
-

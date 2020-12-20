@@ -21,7 +21,7 @@ int		new_letter_red(t_info *parsed, int red_i, char let);
 
 
 //parser_utils.c
-void	two_quot(char *line, t_info *parsed, int arg_i, int *i);
+void	two_quot(char *line, t_info *parsed, int *i, t_env *env);
 void	parse_echo_n(t_info *parsed);
 void	count_args(t_info *parsed);
 
@@ -36,8 +36,8 @@ void	pars_dollar_env(t_info *parsed, t_env *env, int arg_i, char *env_str);
 
 /* Shell functions */
 void	ft_echo(t_info *info);
-int		ft_pwd(t_info *info, t_env *env, int fd);
-int		ft_cd(t_info *info, t_env *env, int fd);
+int		ft_pwd(t_info *info);
+int		ft_cd(t_info *info, t_env *env);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
 void	ft_env(t_env *env, int fd);
