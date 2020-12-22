@@ -42,7 +42,7 @@ int		parser(char *line, t_info *parsed, t_env *env)
 		arg_i++;
 	}
 	if (!parsed->args || !parsed->args[0])
-		return (0);
+		return (-1);
 	count_args(parsed);
 	if (ft_strncmp(parsed->args[0], "echo", 4) == 0 && parsed->args_num > 0)
 		parse_echo_n(parsed);
@@ -67,6 +67,9 @@ int main(int argc, char **argv, char *envp[])
 
 	t_env	*env;
 	env = NULL;
+
+	signal(SIGQUIT, SIG_IGN);
+
 	env = get_env(envp, env);
 
 	if (argc == -2 && !argv)
@@ -87,6 +90,12 @@ int main(int argc, char **argv, char *envp[])
 		parsed.in = 0;
 		parsed.out = 1;
 		parsed.envp = envp;
+		if (i == -1)
+		{
+			free(parsed.args);
+			parsed.args = NULL;
+			i = 0;
+		}
 		process(env, &parsed);
 
 		if (parsed.args)

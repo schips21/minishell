@@ -5,6 +5,7 @@
 #include<errno.h>
 #include <dirent.h>
 #include <fcntl.h>
+#include <signal.h>
 
 //mem_realloc.c
 int 	new_word_next(t_info *parsed, int i, int j);
@@ -82,3 +83,6 @@ char			*ft_strjoin_path(char const *s1, char const *s2);
 
 
 char	*ft_def_strdup(char *s1);
+
+void		*free_other(char *type, char *value);
+t_env		*find_env_env(t_env *env, char *type);

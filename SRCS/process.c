@@ -79,7 +79,8 @@ int		process(t_env *env, t_info *info)
 	res = redirect_processing(info);
 	if (res != 0)
 		return (res);
-	res = command_execution(info, env);
+	if (info->args != NULL)
+		res = command_execution(info, env);
 //	printf("echo $?\n%i\n", res);
 	if (info->in != 0)
 		close(info->in);

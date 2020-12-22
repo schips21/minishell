@@ -12,7 +12,7 @@ $(LIBFT): my_libft/*.c my_libft/libft.h
 	make -C my_libft
 
 $(NAME): $(SOURCES) $(LIBFT) $(HEADER)
-	gcc $(SOURCES) $(LIBFT) -o $(NAME)
+	gcc -Wall -Wextra -Werror $(SOURCES) $(LIBFT) -o $(NAME)
 
 clean:
 	make clean -C my_libft

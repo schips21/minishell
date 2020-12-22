@@ -26,10 +26,13 @@ void	parse_echo_n(t_info *parsed)
 	if (parsed->args[1][i] == '-')
 	{
 		i++;
-		while (parsed->args[1][i] == 'n' && parsed->args[1][i] != '\0')
-			i++;
-		if (parsed->args[1][i] == '\0')
-			parsed->n_flag = 1;
+		if (parsed->args[1][i] == 'n')
+		{
+			while (parsed->args[1][i] == 'n' && parsed->args[1][i] != '\0')
+				i++;
+			if (parsed->args[1][i] == '\0')
+				parsed->n_flag = 1;
+		}
 	}
 	if (parsed->n_flag == 1)
 	{

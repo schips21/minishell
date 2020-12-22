@@ -38,7 +38,10 @@ void	pars_dollar_env(t_info *parsed, t_env *env, int arg_i, char *env_str)
 	int		i;
 
 	path_env = NULL;
-	finded_end = find_env(env, env_str);
+	if (env_str[0] == '\0')
+		finded_end = ft_strdup("$");
+	else
+		finded_end = find_env(env, env_str);
 	if (finded_end)
 		path_env = ft_strdup(finded_end);
 	free (env_str);

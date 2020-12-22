@@ -95,7 +95,8 @@ int			excex_command(char *command, t_env *env, t_info *info)
 	if (pid == 0)
 	{
 		if ((execve(command, info->args, envp)) == -1)
-			return (other_error(info));
+//			return (other_error(info));
+			exit (other_error(info));
 		exit(ret);
 	}
 	else if (pid < 0)

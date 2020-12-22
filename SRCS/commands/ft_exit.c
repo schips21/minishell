@@ -7,6 +7,44 @@
 
 void	ft_exit(t_info *info)
 {
-	if (info)
-		exit(0);
+	int i;
+
+	if (info->args_num == 0)
+	{
+		ft_putstr_fd("exit\n", 1);
+		exit(info->res_prev);
+	}
+	else
+	{
+		i = 0;
+		while (info->args[1][i])
+		{
+			if (!(info->args[1][i] >= '0' && info->args[1][i] <= '9'))
+				break;
+			i++;
+		}
+		if (info->args[1][i] == '\0' && info->args_num == 1)
+		{
+			ft_putstr_fd("exit", 1);
+			exit(ft_atoi(info->args[1]));
+		}
+		else if (info->args[1][i] == '\0' && info->args_num > 1)
+		{
+			ft_putstr_fd("minishell: ", 1);
+			ft_putstr_fd(info->args[0], 1);
+			ft_putstr_fd(": too many arguments\n", 1);
+			info->res_prev = 1;
+		}
+		else
+		{
+			info->res_prev = 255;
+			ft_putstr_fd("exit\n", 1);
+			ft_putstr_fd("minishell: ", 1);
+			ft_putstr_fd(info->args[0], 1);
+			ft_putstr_fd(": ", 1);
+			ft_putstr_fd(info->args[1], 1);
+			ft_putstr_fd(": numeric argument required\n", 1);
+			exit(info->res_prev);
+		}
+	}
 }
