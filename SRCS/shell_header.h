@@ -7,6 +7,8 @@
 #include <fcntl.h>
 #include <signal.h>
 
+int g_res;
+
 //mem_realloc.c
 int 	new_word_next(t_info *parsed, int i, int j);
 int 	new_word(t_info *parsed);

@@ -60,12 +60,15 @@ int		ft_cd(t_info *info, t_env *env)
 	char	*old_pwd;
 	t_env	*env_old_pwd;
 
+	// надо выделять память под env_old_pwd, чтобы ниже можно было фришить
 	if ((env_old_pwd = find_env_env(env, "OLDPWD")) != NULL)
 	{
 		old_pwd = getcwd(NULL, 0); //malloc
 		if (old_pwd == NULL)
 			return (cd_error());
 		env_old_pwd->class = 1;
+		// ошибка маллока тут
+		// я попробовала это просто закомментить и не фришить, работает, но скорее всего это будет неверно
 		if (env_old_pwd->value != NULL)
 			free(env_old_pwd->value);
 		env_old_pwd->value = old_pwd;

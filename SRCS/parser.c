@@ -3,7 +3,9 @@
 int		parser(char *line, t_info *parsed, t_env *env)
 {
 	int i;
+	int j;
 	int arg_i;
+	char *res_prev_str;
 
 	i = parsed->cur_i;
 	while (!ft_strchr(";|", line[i]) && line[i])
@@ -30,7 +32,22 @@ int		parser(char *line, t_info *parsed, t_env *env)
 				two_quot(line, parsed, &i, env);
 			}
 			else if (line[i] == '$')
-				pars_dollar_env(parsed, env, arg_i, pars_dollar(line, &i));
+			{
+				if (line[i + 1] == '?')
+				{
+					i += 2;
+					res_prev_str = ft_itoa(g_res);
+					j = 0;
+					while (res_prev_str[j] != '\0')
+						new_letter(parsed, arg_i, res_prev_str[j++]);
+					if (res_prev_str)
+						free(res_prev_str);
+				}
+				else if (line[i + 1] == '\'' || line[i + 1] == '\"')
+					i++;
+				else
+					pars_dollar_env(parsed, env, arg_i, pars_dollar(line, &i));
+			}
 			else if (line[i] == '\\')
 			{
 				i++;
@@ -96,7 +113,7 @@ int main(int argc, char **argv, char *envp[])
 			parsed.args = NULL;
 			i = 0;
 		}
-		process(env, &parsed);
+		g_res = process(env, &parsed);
 
 		if (parsed.args)
 		{

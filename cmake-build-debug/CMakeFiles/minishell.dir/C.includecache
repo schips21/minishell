@@ -6,8 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/Users/schips/Desktop/minishell/SRCS/parser_utils.c
-shell_header.h
+/Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c
+../shell_header.h
 /Users/schips/Desktop/minishell/SRCS/shell_header.h
 
 /Users/schips/Desktop/minishell/SRCS/shell_header.h
@@ -24,6 +24,8 @@ errno.h
 dirent.h
 -
 fcntl.h
+-
+signal.h
 -
 
 /Users/schips/Desktop/minishell/SRCS/structures.h

@@ -60,7 +60,10 @@ int		command_execution(t_info *info, t_env *env)
 	else if (ft_strncmp(info->args[0], "echo", 5) == 0)
 		ft_echo(info);
 	else if (ft_strncmp(info->args[0], "exit", 5) == 0)
+	{
 		ft_exit(info);
+		res = g_res;
+	}
 	else
 		res = ft_other_commands(info, env);
 	return (res);
@@ -86,5 +89,6 @@ int		process(t_env *env, t_info *info)
 		close(info->in);
 	if (info->out != 1)
 		close(info->out);
+//	printf("%s", "\nOK\n");
 	return (res);
 }
