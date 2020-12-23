@@ -21,8 +21,10 @@ void	two_quot(char *line, t_info *parsed, int *i, t_env *env)
 void	parse_echo_n(t_info *parsed)
 {
 	int i;
+	int fl_n;
 
 	i = 0;
+	fl_n = 1;
 	if (parsed->args[1][i] == '-')
 	{
 		i++;
@@ -38,6 +40,30 @@ void	parse_echo_n(t_info *parsed)
 	{
 		make_type(parsed, 1);
 		parsed->args_num--;
+		while(fl_n == 1 && parsed->args[1])
+		{
+			i = 0;
+			if (parsed->args[1][i] == '-')
+			{
+				i++;
+				if (parsed->args[1][i] == 'n')
+				{
+					while (parsed->args[1][i] == 'n' && parsed->args[1][i] != '\0')
+						i++;
+					if (parsed->args[1][i] == '\0')
+					{
+						make_type(parsed, 1);
+						parsed->args_num--;
+					}
+					else
+						fl_n = 0;
+				}
+				else
+					fl_n = 0;
+			}
+			else
+				fl_n = 0;
+		}
 	}
 }
 

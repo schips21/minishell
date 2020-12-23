@@ -71,36 +71,6 @@ int		new_letter(t_info *parsed, int arg_i, char let)
 		return(new_letter_next(parsed, arg_i, let));
 }
 
-//int		make_type(t_info *parsed, int n_flag)
-//{
-//	char	**new;
-//	int i;
-//	int j;
-//
-//	if (n_flag == 0)
-//		parsed->type = parsed->args[0];
-//	i = 1;
-//	while (parsed->args[i])
-//		i++;
-//	if (!(new = malloc(sizeof(char *) * (i))))
-//		return (0);
-//	new[i - 1] = NULL;
-//	j = 0;
-//	while (j < i - 1)
-//	{
-//		new[j] = parsed->args[j + 1];
-//		j++;
-//	}
-//	free(parsed->args);
-//	parsed->args = NULL;
-//	//чтобы не было сигаборта для случая, когда у нас только тип, а аргумента нет
-//	if (new[0])
-//		parsed->args = new;
-//	else
-//		free(new);
-//	return (0);
-//}
-
 int		make_type(t_info *parsed, int n_flag)
 {
 	char	**new;
