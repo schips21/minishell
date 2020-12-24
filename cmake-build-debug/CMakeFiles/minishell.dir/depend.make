@@ -76,6 +76,11 @@ CMakeFiles/minishell.dir/SRCS/info.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/info.c.o: ../SRCS/structures.h
 CMakeFiles/minishell.dir/SRCS/info.c.o: ../my_libft/libft.h
 
+CMakeFiles/minishell.dir/SRCS/main.c.o: ../SRCS/main.c
+CMakeFiles/minishell.dir/SRCS/main.c.o: ../SRCS/shell_header.h
+CMakeFiles/minishell.dir/SRCS/main.c.o: ../SRCS/structures.h
+CMakeFiles/minishell.dir/SRCS/main.c.o: ../my_libft/libft.h
+
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/parser.c
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/structures.h

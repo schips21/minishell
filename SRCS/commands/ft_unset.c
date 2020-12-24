@@ -13,6 +13,16 @@ void	remove_env(t_env **pr, t_env **now, t_env **start)
 	free(*now);
 }
 
+int ft_bigger_str(char *str1, char *str2)
+{
+	int len;
+
+	len = ft_strlen(str1);
+	if (len < (int)ft_strlen(str2))
+		len = ft_strlen(str2);
+	return (len);
+}
+
 int	ft_unset(t_info *info, t_env *env)
 {
 	int		i;
@@ -26,7 +36,7 @@ int	ft_unset(t_info *info, t_env *env)
 		now = env;
 		while (now != NULL)
 		{
-			if (ft_strncmp(now->type, info->args[i], ft_strlen(info->args[i])) == 0)
+			if (ft_strncmp(now->type, info->args[i], ft_bigger_str(now->type, info->args[i])) == 0)
 			{
 				remove_env(&pr, &now, &env);
 				break ;

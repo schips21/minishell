@@ -18,7 +18,7 @@ char	*find_env(t_env *env, char *type)
 
 	while (env != NULL)
 	{
-		len = ft_strlen(type);
+		len = ft_bigger_str(env->type, type);
 		if(ft_strncmp(env->type, type, len) == 0)
 			return (env->value);
 		env = env->next;
@@ -67,11 +67,9 @@ int		ft_cd(t_info *info, t_env *env)
 		if (old_pwd == NULL)
 			return (cd_error());
 		env_old_pwd->class = 1;
-		// ошибка маллока тут
-		// я попробовала это просто закомментить и не фришить, работает, но скорее всего это будет неверно
 		if (env_old_pwd->value != NULL)
 			free(env_old_pwd->value);
-		env_old_pwd->value = old_pwd;
+		env_old_pwd->value = ft_strdup(old_pwd);
 	}
 	if (info->args_num == 0)
 		res = chdir(find_env(env, "HOME"));

@@ -548,6 +548,33 @@ SRCS/info.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/info.c.s
 .PHONY : SRCS/info.c.s
 
+SRCS/main.o: SRCS/main.c.o
+
+.PHONY : SRCS/main.o
+
+# target to build an object file
+SRCS/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/main.c.o
+.PHONY : SRCS/main.c.o
+
+SRCS/main.i: SRCS/main.c.i
+
+.PHONY : SRCS/main.i
+
+# target to preprocess a source file
+SRCS/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/main.c.i
+.PHONY : SRCS/main.c.i
+
+SRCS/main.s: SRCS/main.c.s
+
+.PHONY : SRCS/main.s
+
+# target to generate assembly for a file
+SRCS/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/main.c.s
+.PHONY : SRCS/main.c.s
+
 SRCS/parser.o: SRCS/parser.c.o
 
 .PHONY : SRCS/parser.o
@@ -2033,6 +2060,9 @@ help:
 	@echo "... SRCS/info.o"
 	@echo "... SRCS/info.i"
 	@echo "... SRCS/info.s"
+	@echo "... SRCS/main.o"
+	@echo "... SRCS/main.i"
+	@echo "... SRCS/main.s"
 	@echo "... SRCS/parser.o"
 	@echo "... SRCS/parser.i"
 	@echo "... SRCS/parser.s"

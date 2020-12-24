@@ -127,6 +127,9 @@
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/info.c">
 			<Option target="minishell"/>
 		</Unit>
+		<Unit filename="/Users/schips/Desktop/minishell/SRCS/main.c">
+			<Option target="minishell"/>
+		</Unit>
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/parser.c">
 			<Option target="minishell"/>
 		</Unit>

@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/schips/Desktop/minishell/SRCS/env/env_2.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
   "/Users/schips/Desktop/minishell/SRCS/env/env_change.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
   "/Users/schips/Desktop/minishell/SRCS/info.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/info.c.o"
+  "/Users/schips/Desktop/minishell/SRCS/main.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/main.c.o"
   "/Users/schips/Desktop/minishell/SRCS/parser.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser.c.o"
   "/Users/schips/Desktop/minishell/SRCS/parser_dollar.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o"
   "/Users/schips/Desktop/minishell/SRCS/parser_mem_realloc.c" "/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o"

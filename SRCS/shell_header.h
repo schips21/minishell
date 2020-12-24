@@ -43,6 +43,7 @@ int		ft_pwd(t_info *info);
 int		ft_cd(t_info *info, t_env *env);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
+int		ft_bigger_str(char *str1, char *str2);
 void	ft_env(t_env *env, int fd);
 void	ft_exit(t_info *info);
 
@@ -88,3 +89,6 @@ char	*ft_def_strdup(char *s1);
 
 void		*free_other(char *type, char *value);
 t_env		*find_env_env(t_env *env, char *type);
+
+//parser.c
+int		parser(char *line, t_info *parsed, t_env *env);

@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
   "CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
   "CMakeFiles/minishell.dir/SRCS/info.c.o"
+  "CMakeFiles/minishell.dir/SRCS/main.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o"

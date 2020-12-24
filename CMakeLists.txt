@@ -80,5 +80,5 @@ add_executable(minishell
         SRCS/env/env.c
         SRCS/env/env_2.c
         SRCS/env/env_change.c
-        
+        SRCS/main.c
         )
