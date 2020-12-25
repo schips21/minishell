@@ -7,6 +7,7 @@ int		parser(char *line, t_info *parsed, t_env *env)
 	int arg_i;
 	char *res_prev_str;
 
+	parser_check_line(line, &parsed);
 	i = parsed->cur_i;
 	while (!ft_strchr(";|", line[i]) && line[i])
 	{

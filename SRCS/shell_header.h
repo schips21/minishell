@@ -92,3 +92,6 @@ t_env		*find_env_env(t_env *env, char *type);
 
 //parser.c
 int		parser(char *line, t_info *parsed, t_env *env);
+
+//parser_check_line.c
+void	(char *line, t_info *info);

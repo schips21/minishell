@@ -133,6 +133,9 @@
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/parser.c">
 			<Option target="minishell"/>
 		</Unit>
+		<Unit filename="/Users/schips/Desktop/minishell/SRCS/parser_check_line.c">
+			<Option target="minishell"/>
+		</Unit>
 		<Unit filename="/Users/schips/Desktop/minishell/SRCS/parser_dollar.c">
 			<Option target="minishell"/>
 		</Unit>

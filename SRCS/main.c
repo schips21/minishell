@@ -5,6 +5,7 @@ int main(int argc, char **argv, char *envp[])
 	t_info parsed;
 	int i;
 	int tmp;
+	int tmp_pipe;
 	int j;
 	t_env	*env;
 
@@ -14,6 +15,8 @@ int main(int argc, char **argv, char *envp[])
 	signal(SIGQUIT, SIG_IGN);
 	if (argc == -2 && !argv)
 		return (0);
+	parsed.cur_i = 0;
+	parsed.pipe_prev = 0;
 	while (get_next_line(0, &line))
 	{
 		i = 1;
@@ -21,8 +24,10 @@ int main(int argc, char **argv, char *envp[])
 		while(i != 0)
 		{
 			tmp = parsed.cur_i;
+			tmp_pipe = parsed.pipe_prev;
 			ft_bzero(&parsed, sizeof(parsed));
 			parsed.cur_i = tmp;
+			parsed.pipe_prev = tmp_pipe;
 			i = parser(line, &parsed, env);
 			parsed.in = 0;
 			parsed.out = 1;

@@ -86,6 +86,11 @@ CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/structures.h
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../my_libft/libft.h
 
+CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: ../SRCS/parser_check_line.c
+CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: ../SRCS/shell_header.h
+CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: ../SRCS/structures.h
+CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: ../my_libft/libft.h
+
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o: ../SRCS/parser_dollar.c
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o: ../SRCS/structures.h

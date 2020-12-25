@@ -602,6 +602,33 @@ SRCS/parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser.c.s
 .PHONY : SRCS/parser.c.s
 
+SRCS/parser_check_line.o: SRCS/parser_check_line.c.o
+
+.PHONY : SRCS/parser_check_line.o
+
+# target to build an object file
+SRCS/parser_check_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o
+.PHONY : SRCS/parser_check_line.c.o
+
+SRCS/parser_check_line.i: SRCS/parser_check_line.c.i
+
+.PHONY : SRCS/parser_check_line.i
+
+# target to preprocess a source file
+SRCS/parser_check_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line.c.i
+.PHONY : SRCS/parser_check_line.c.i
+
+SRCS/parser_check_line.s: SRCS/parser_check_line.c.s
+
+.PHONY : SRCS/parser_check_line.s
+
+# target to generate assembly for a file
+SRCS/parser_check_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s
+.PHONY : SRCS/parser_check_line.c.s
+
 SRCS/parser_dollar.o: SRCS/parser_dollar.c.o
 
 .PHONY : SRCS/parser_dollar.o
@@ -2066,6 +2093,9 @@ help:
 	@echo "... SRCS/parser.o"
 	@echo "... SRCS/parser.i"
 	@echo "... SRCS/parser.s"
+	@echo "... SRCS/parser_check_line.o"
+	@echo "... SRCS/parser_check_line.i"
+	@echo "... SRCS/parser_check_line.s"
 	@echo "... SRCS/parser_dollar.o"
 	@echo "... SRCS/parser_dollar.i"
 	@echo "... SRCS/parser_dollar.s"

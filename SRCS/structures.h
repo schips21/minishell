@@ -11,6 +11,7 @@ typedef struct			s_info
 	char				**redirs;
 	int					cur_i;
 	int					pipe;
+	int					pipe_prev;
 	int					arg_i;
 	int					res_prev;
 
@@ -30,3 +31,9 @@ typedef struct		s_env
 	int				class;
 	struct s_env	*next;	
 }					t_env;
+
+typedef struct		s_line_check
+{
+	int				symb;
+	int				space;
+}					t_line_check;
