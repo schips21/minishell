@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 13:02:44 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/04 15:42:30 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/24 16:03:22 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void		redirect_processing_out(t_info *info, int i)
 	else
 		info->out = open(info->redirs[i+1], O_RDWR | O_CREAT | O_APPEND,
 			S_IREAD | S_IWRITE);
+	info->right_redir = 1;
 }
 
 void		redirect_processing_in(t_info *info, int i)
@@ -29,6 +30,9 @@ void		redirect_processing_in(t_info *info, int i)
 	if (info->in != 0)
 		close(info->in);
 	info->in = open(info->redirs[i+1], O_RDWR);
+	if (info->in == -1)
+		printf("It's an error\n");
+	info->left_redir = 1;
 }
 
 int			redirect_processing(t_info *info)

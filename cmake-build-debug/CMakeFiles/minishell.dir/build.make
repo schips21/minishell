@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/schips/Desktop/minishell
+CMAKE_SOURCE_DIR = /Users/schips/Desktop/katya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/schips/Desktop/minishell/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/schips/Desktop/katya/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minishell.dir/depend.make
@@ -79,913 +79,926 @@ include CMakeFiles/minishell.dir/flags.make
 
 CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o: ../my_libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_atoi.c
 
 CMakeFiles/minishell.dir/my_libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_atoi.c > CMakeFiles/minishell.dir/my_libft/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_atoi.c > CMakeFiles/minishell.dir/my_libft/ft_atoi.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_atoi.c -o CMakeFiles/minishell.dir/my_libft/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_atoi.c -o CMakeFiles/minishell.dir/my_libft/ft_atoi.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o: ../my_libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_bzero.c
 
 CMakeFiles/minishell.dir/my_libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_bzero.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_bzero.c > CMakeFiles/minishell.dir/my_libft/ft_bzero.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_bzero.c > CMakeFiles/minishell.dir/my_libft/ft_bzero.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_bzero.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_bzero.c -o CMakeFiles/minishell.dir/my_libft/ft_bzero.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_bzero.c -o CMakeFiles/minishell.dir/my_libft/ft_bzero.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o: ../my_libft/ft_calloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_calloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_calloc.c
 
 CMakeFiles/minishell.dir/my_libft/ft_calloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_calloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_calloc.c > CMakeFiles/minishell.dir/my_libft/ft_calloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_calloc.c > CMakeFiles/minishell.dir/my_libft/ft_calloc.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_calloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_calloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_calloc.c -o CMakeFiles/minishell.dir/my_libft/ft_calloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_calloc.c -o CMakeFiles/minishell.dir/my_libft/ft_calloc.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o: ../my_libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_isalnum.c
 
 CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_isalnum.c > CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_isalnum.c > CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_isalnum.c -o CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_isalnum.c -o CMakeFiles/minishell.dir/my_libft/ft_isalnum.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o: ../my_libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_isalpha.c
 
 CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_isalpha.c > CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_isalpha.c > CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_isalpha.c -o CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_isalpha.c -o CMakeFiles/minishell.dir/my_libft/ft_isalpha.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o: ../my_libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isascii.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_isascii.c
 
 CMakeFiles/minishell.dir/my_libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_isascii.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_isascii.c > CMakeFiles/minishell.dir/my_libft/ft_isascii.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_isascii.c > CMakeFiles/minishell.dir/my_libft/ft_isascii.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_isascii.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_isascii.c -o CMakeFiles/minishell.dir/my_libft/ft_isascii.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_isascii.c -o CMakeFiles/minishell.dir/my_libft/ft_isascii.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o: ../my_libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_isdigit.c
 
 CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_isdigit.c > CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_isdigit.c > CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_isdigit.c -o CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_isdigit.c -o CMakeFiles/minishell.dir/my_libft/ft_isdigit.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o: ../my_libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_isprint.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_isprint.c
 
 CMakeFiles/minishell.dir/my_libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_isprint.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_isprint.c > CMakeFiles/minishell.dir/my_libft/ft_isprint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_isprint.c > CMakeFiles/minishell.dir/my_libft/ft_isprint.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_isprint.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_isprint.c -o CMakeFiles/minishell.dir/my_libft/ft_isprint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_isprint.c -o CMakeFiles/minishell.dir/my_libft/ft_isprint.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o: ../my_libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_itoa.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_itoa.c
 
 CMakeFiles/minishell.dir/my_libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_itoa.c > CMakeFiles/minishell.dir/my_libft/ft_itoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_itoa.c > CMakeFiles/minishell.dir/my_libft/ft_itoa.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_itoa.c -o CMakeFiles/minishell.dir/my_libft/ft_itoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_itoa.c -o CMakeFiles/minishell.dir/my_libft/ft_itoa.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o: ../my_libft/ft_lstadd_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstadd_back.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstadd_back.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstadd_back.c > CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstadd_back.c > CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstadd_back.c -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstadd_back.c -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_back.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o: ../my_libft/ft_lstadd_front.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstadd_front.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstadd_front.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstadd_front.c > CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstadd_front.c > CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstadd_front.c -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstadd_front.c -o CMakeFiles/minishell.dir/my_libft/ft_lstadd_front.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o: ../my_libft/ft_lstclear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstclear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstclear.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstclear.c > CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstclear.c > CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstclear.c -o CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstclear.c -o CMakeFiles/minishell.dir/my_libft/ft_lstclear.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o: ../my_libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstdelone.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstdelone.c > CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstdelone.c > CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstdelone.c -o CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstdelone.c -o CMakeFiles/minishell.dir/my_libft/ft_lstdelone.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o: ../my_libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstiter.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstiter.c > CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstiter.c > CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstiter.c -o CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstiter.c -o CMakeFiles/minishell.dir/my_libft/ft_lstiter.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o: ../my_libft/ft_lstlast.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstlast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstlast.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstlast.c > CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstlast.c > CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstlast.c -o CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstlast.c -o CMakeFiles/minishell.dir/my_libft/ft_lstlast.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o: ../my_libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstmap.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstmap.c > CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstmap.c > CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstmap.c -o CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstmap.c -o CMakeFiles/minishell.dir/my_libft/ft_lstmap.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o: ../my_libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstnew.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstnew.c > CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstnew.c > CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstnew.c -o CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstnew.c -o CMakeFiles/minishell.dir/my_libft/ft_lstnew.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o: ../my_libft/ft_lstsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_lstsize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_lstsize.c
 
 CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_lstsize.c > CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_lstsize.c > CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_lstsize.c -o CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_lstsize.c -o CMakeFiles/minishell.dir/my_libft/ft_lstsize.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o: ../my_libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memccpy.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memccpy.c > CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memccpy.c > CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memccpy.c -o CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memccpy.c -o CMakeFiles/minishell.dir/my_libft/ft_memccpy.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o: ../my_libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memchr.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memchr.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memchr.c > CMakeFiles/minishell.dir/my_libft/ft_memchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memchr.c > CMakeFiles/minishell.dir/my_libft/ft_memchr.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memchr.c -o CMakeFiles/minishell.dir/my_libft/ft_memchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memchr.c -o CMakeFiles/minishell.dir/my_libft/ft_memchr.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o: ../my_libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memcmp.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memcmp.c > CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memcmp.c > CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memcmp.c -o CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memcmp.c -o CMakeFiles/minishell.dir/my_libft/ft_memcmp.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o: ../my_libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memcpy.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memcpy.c > CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memcpy.c > CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memcpy.c -o CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memcpy.c -o CMakeFiles/minishell.dir/my_libft/ft_memcpy.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o: ../my_libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memmove.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memmove.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memmove.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memmove.c > CMakeFiles/minishell.dir/my_libft/ft_memmove.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memmove.c > CMakeFiles/minishell.dir/my_libft/ft_memmove.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memmove.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memmove.c -o CMakeFiles/minishell.dir/my_libft/ft_memmove.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memmove.c -o CMakeFiles/minishell.dir/my_libft/ft_memmove.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_memset.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_memset.c.o: ../my_libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memset.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memset.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/minishell.dir/my_libft/ft_memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_memset.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_memset.c
 
 CMakeFiles/minishell.dir/my_libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_memset.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_memset.c > CMakeFiles/minishell.dir/my_libft/ft_memset.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_memset.c > CMakeFiles/minishell.dir/my_libft/ft_memset.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_memset.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_memset.c -o CMakeFiles/minishell.dir/my_libft/ft_memset.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_memset.c -o CMakeFiles/minishell.dir/my_libft/ft_memset.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o: ../my_libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_putchar_fd.c
 
 CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_putchar_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_putchar_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_putchar_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_putchar_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putchar_fd.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o: ../my_libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_putendl_fd.c
 
 CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_putendl_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_putendl_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_putendl_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_putendl_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putendl_fd.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o: ../my_libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_putnbr_fd.c
 
 CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_putnbr_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_putnbr_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_putnbr_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_putnbr_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putnbr_fd.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o: ../my_libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_putstr_fd.c
 
 CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_putstr_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_putstr_fd.c > CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_putstr_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_putstr_fd.c -o CMakeFiles/minishell.dir/my_libft/ft_putstr_fd.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_split.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_split.c.o: ../my_libft/ft_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/minishell.dir/my_libft/ft_split.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_split.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_split.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/minishell.dir/my_libft/ft_split.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_split.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_split.c
 
 CMakeFiles/minishell.dir/my_libft/ft_split.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_split.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_split.c > CMakeFiles/minishell.dir/my_libft/ft_split.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_split.c > CMakeFiles/minishell.dir/my_libft/ft_split.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_split.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_split.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_split.c -o CMakeFiles/minishell.dir/my_libft/ft_split.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_split.c -o CMakeFiles/minishell.dir/my_libft/ft_split.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o: ../my_libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strchr.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strchr.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strchr.c > CMakeFiles/minishell.dir/my_libft/ft_strchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strchr.c > CMakeFiles/minishell.dir/my_libft/ft_strchr.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strchr.c -o CMakeFiles/minishell.dir/my_libft/ft_strchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strchr.c -o CMakeFiles/minishell.dir/my_libft/ft_strchr.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o: ../my_libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strdup.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strdup.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strdup.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strdup.c > CMakeFiles/minishell.dir/my_libft/ft_strdup.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strdup.c > CMakeFiles/minishell.dir/my_libft/ft_strdup.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strdup.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strdup.c -o CMakeFiles/minishell.dir/my_libft/ft_strdup.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strdup.c -o CMakeFiles/minishell.dir/my_libft/ft_strdup.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o: ../my_libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strjoin.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strjoin.c > CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strjoin.c > CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strjoin.c -o CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strjoin.c -o CMakeFiles/minishell.dir/my_libft/ft_strjoin.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o: ../my_libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strlcat.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strlcat.c > CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strlcat.c > CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strlcat.c -o CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strlcat.c -o CMakeFiles/minishell.dir/my_libft/ft_strlcat.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o: ../my_libft/ft_strlcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strlcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strlcpy.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strlcpy.c > CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strlcpy.c > CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strlcpy.c -o CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strlcpy.c -o CMakeFiles/minishell.dir/my_libft/ft_strlcpy.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o: ../my_libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strlen.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strlen.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strlen.c > CMakeFiles/minishell.dir/my_libft/ft_strlen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strlen.c > CMakeFiles/minishell.dir/my_libft/ft_strlen.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strlen.c -o CMakeFiles/minishell.dir/my_libft/ft_strlen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strlen.c -o CMakeFiles/minishell.dir/my_libft/ft_strlen.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o: ../my_libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strmapi.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strmapi.c > CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strmapi.c > CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strmapi.c -o CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strmapi.c -o CMakeFiles/minishell.dir/my_libft/ft_strmapi.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o: ../my_libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strncmp.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strncmp.c > CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strncmp.c > CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strncmp.c -o CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strncmp.c -o CMakeFiles/minishell.dir/my_libft/ft_strncmp.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o: ../my_libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strnstr.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strnstr.c > CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strnstr.c > CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strnstr.c -o CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strnstr.c -o CMakeFiles/minishell.dir/my_libft/ft_strnstr.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o: ../my_libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strrchr.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strrchr.c > CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strrchr.c > CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strrchr.c -o CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strrchr.c -o CMakeFiles/minishell.dir/my_libft/ft_strrchr.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o: ../my_libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_strtrim.c
 
 CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_strtrim.c > CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_strtrim.c > CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_strtrim.c -o CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_strtrim.c -o CMakeFiles/minishell.dir/my_libft/ft_strtrim.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_substr.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_substr.c.o: ../my_libft/ft_substr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/minishell.dir/my_libft/ft_substr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_substr.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_substr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/minishell.dir/my_libft/ft_substr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_substr.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_substr.c
 
 CMakeFiles/minishell.dir/my_libft/ft_substr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_substr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_substr.c > CMakeFiles/minishell.dir/my_libft/ft_substr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_substr.c > CMakeFiles/minishell.dir/my_libft/ft_substr.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_substr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_substr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_substr.c -o CMakeFiles/minishell.dir/my_libft/ft_substr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_substr.c -o CMakeFiles/minishell.dir/my_libft/ft_substr.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o: ../my_libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_tolower.c
 
 CMakeFiles/minishell.dir/my_libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_tolower.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_tolower.c > CMakeFiles/minishell.dir/my_libft/ft_tolower.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_tolower.c > CMakeFiles/minishell.dir/my_libft/ft_tolower.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_tolower.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_tolower.c -o CMakeFiles/minishell.dir/my_libft/ft_tolower.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_tolower.c -o CMakeFiles/minishell.dir/my_libft/ft_tolower.c.s
 
 CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o: ../my_libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o   -c /Users/schips/Desktop/minishell/my_libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o   -c /Users/schips/Desktop/katya/my_libft/ft_toupper.c
 
 CMakeFiles/minishell.dir/my_libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/ft_toupper.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/ft_toupper.c > CMakeFiles/minishell.dir/my_libft/ft_toupper.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/ft_toupper.c > CMakeFiles/minishell.dir/my_libft/ft_toupper.c.i
 
 CMakeFiles/minishell.dir/my_libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/ft_toupper.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/ft_toupper.c -o CMakeFiles/minishell.dir/my_libft/ft_toupper.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/ft_toupper.c -o CMakeFiles/minishell.dir/my_libft/ft_toupper.c.s
 
 CMakeFiles/minishell.dir/my_libft/get_next_line.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/get_next_line.c.o: ../my_libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/minishell.dir/my_libft/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/get_next_line.c.o   -c /Users/schips/Desktop/minishell/my_libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/minishell.dir/my_libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/get_next_line.c.o   -c /Users/schips/Desktop/katya/my_libft/get_next_line.c
 
 CMakeFiles/minishell.dir/my_libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/get_next_line.c > CMakeFiles/minishell.dir/my_libft/get_next_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/get_next_line.c > CMakeFiles/minishell.dir/my_libft/get_next_line.c.i
 
 CMakeFiles/minishell.dir/my_libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/get_next_line.c -o CMakeFiles/minishell.dir/my_libft/get_next_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/get_next_line.c -o CMakeFiles/minishell.dir/my_libft/get_next_line.c.s
 
 CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o: ../my_libft/get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o   -c /Users/schips/Desktop/minishell/my_libft/get_next_line_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o   -c /Users/schips/Desktop/katya/my_libft/get_next_line_utils.c
 
 CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/my_libft/get_next_line_utils.c > CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/my_libft/get_next_line_utils.c > CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.i
 
 CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/my_libft/get_next_line_utils.c -o CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/my_libft/get_next_line_utils.c -o CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser.c.o: ../SRCS/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/minishell.dir/SRCS/parser.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/minishell.dir/SRCS/parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser.c.o   -c /Users/schips/Desktop/katya/SRCS/parser.c
 
 CMakeFiles/minishell.dir/SRCS/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser.c > CMakeFiles/minishell.dir/SRCS/parser.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser.c > CMakeFiles/minishell.dir/SRCS/parser.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser.c -o CMakeFiles/minishell.dir/SRCS/parser.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser.c -o CMakeFiles/minishell.dir/SRCS/parser.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o: ../SRCS/parser_mem_realloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_mem_realloc.c
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc.c > CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_mem_realloc.c > CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc.c -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_mem_realloc.c -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o: ../SRCS/parser_mem_realloc_redir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc_redir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_mem_realloc_redir.c
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc_redir.c > CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_mem_realloc_redir.c > CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_mem_realloc_redir.c -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_mem_realloc_redir.c -o CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.o: ../SRCS/parser_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/minishell.dir/SRCS/parser_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_utils.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/minishell.dir/SRCS/parser_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_utils.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_utils.c
 
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_utils.c > CMakeFiles/minishell.dir/SRCS/parser_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_utils.c > CMakeFiles/minishell.dir/SRCS/parser_utils.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_utils.c -o CMakeFiles/minishell.dir/SRCS/parser_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_utils.c -o CMakeFiles/minishell.dir/SRCS/parser_utils.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o: ../SRCS/parser_redirects.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_redirects.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_redirects.c
 
 CMakeFiles/minishell.dir/SRCS/parser_redirects.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_redirects.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_redirects.c > CMakeFiles/minishell.dir/SRCS/parser_redirects.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_redirects.c > CMakeFiles/minishell.dir/SRCS/parser_redirects.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_redirects.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_redirects.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_redirects.c -o CMakeFiles/minishell.dir/SRCS/parser_redirects.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_redirects.c -o CMakeFiles/minishell.dir/SRCS/parser_redirects.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o: ../SRCS/parser_dollar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_dollar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_dollar.c
 
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_dollar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_dollar.c > CMakeFiles/minishell.dir/SRCS/parser_dollar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_dollar.c > CMakeFiles/minishell.dir/SRCS/parser_dollar.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_dollar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_dollar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_dollar.c -o CMakeFiles/minishell.dir/SRCS/parser_dollar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_dollar.c -o CMakeFiles/minishell.dir/SRCS/parser_dollar.c.s
 
 CMakeFiles/minishell.dir/SRCS/check_work.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/check_work.c.o: ../SRCS/check_work.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/minishell.dir/SRCS/check_work.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/check_work.c.o   -c /Users/schips/Desktop/minishell/SRCS/check_work.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/minishell.dir/SRCS/check_work.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/check_work.c.o   -c /Users/schips/Desktop/katya/SRCS/check_work.c
 
 CMakeFiles/minishell.dir/SRCS/check_work.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/check_work.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/check_work.c > CMakeFiles/minishell.dir/SRCS/check_work.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/check_work.c > CMakeFiles/minishell.dir/SRCS/check_work.c.i
 
 CMakeFiles/minishell.dir/SRCS/check_work.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/check_work.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/check_work.c -o CMakeFiles/minishell.dir/SRCS/check_work.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/check_work.c -o CMakeFiles/minishell.dir/SRCS/check_work.c.s
 
 CMakeFiles/minishell.dir/SRCS/info.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/info.c.o: ../SRCS/info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/minishell.dir/SRCS/info.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/info.c.o   -c /Users/schips/Desktop/minishell/SRCS/info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/minishell.dir/SRCS/info.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/info.c.o   -c /Users/schips/Desktop/katya/SRCS/info.c
 
 CMakeFiles/minishell.dir/SRCS/info.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/info.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/info.c > CMakeFiles/minishell.dir/SRCS/info.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/info.c > CMakeFiles/minishell.dir/SRCS/info.c.i
 
 CMakeFiles/minishell.dir/SRCS/info.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/info.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/info.c -o CMakeFiles/minishell.dir/SRCS/info.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/info.c -o CMakeFiles/minishell.dir/SRCS/info.c.s
 
 CMakeFiles/minishell.dir/SRCS/process.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/process.c.o: ../SRCS/process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/minishell.dir/SRCS/process.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/process.c.o   -c /Users/schips/Desktop/minishell/SRCS/process.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/minishell.dir/SRCS/process.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/process.c.o   -c /Users/schips/Desktop/katya/SRCS/process.c
 
 CMakeFiles/minishell.dir/SRCS/process.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/process.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/process.c > CMakeFiles/minishell.dir/SRCS/process.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/process.c > CMakeFiles/minishell.dir/SRCS/process.c.i
 
 CMakeFiles/minishell.dir/SRCS/process.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/process.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/process.c -o CMakeFiles/minishell.dir/SRCS/process.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/process.c -o CMakeFiles/minishell.dir/SRCS/process.c.s
 
 CMakeFiles/minishell.dir/SRCS/redirects.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/redirects.c.o: ../SRCS/redirects.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/minishell.dir/SRCS/redirects.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/redirects.c.o   -c /Users/schips/Desktop/minishell/SRCS/redirects.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/minishell.dir/SRCS/redirects.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/redirects.c.o   -c /Users/schips/Desktop/katya/SRCS/redirects.c
 
 CMakeFiles/minishell.dir/SRCS/redirects.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/redirects.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/redirects.c > CMakeFiles/minishell.dir/SRCS/redirects.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/redirects.c > CMakeFiles/minishell.dir/SRCS/redirects.c.i
 
 CMakeFiles/minishell.dir/SRCS/redirects.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/redirects.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/redirects.c -o CMakeFiles/minishell.dir/SRCS/redirects.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/redirects.c -o CMakeFiles/minishell.dir/SRCS/redirects.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o: ../SRCS/commands/ft_echo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_echo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_echo.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_echo.c > CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_echo.c > CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_echo.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_echo.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o: ../SRCS/commands/ft_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_env.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_env.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_env.c > CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_env.c > CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_env.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_env.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o: ../SRCS/commands/ft_cd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_cd.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c > CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_cd.c > CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_cd.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_cd.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o: ../SRCS/commands/ft_pwd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_pwd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_pwd.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_pwd.c > CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_pwd.c > CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_pwd.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_pwd.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o: ../SRCS/commands/ft_export.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_export.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_export.c > CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_export.c > CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_export.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_export.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o: ../SRCS/commands/ft_unset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_unset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_unset.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_unset.c > CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_unset.c > CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_unset.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_unset.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o: ../SRCS/commands/ft_exit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_exit.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c > CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_exit.c > CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_exit.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_exit.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o: ../SRCS/commands/ft_export_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_export_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_export_2.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_export_2.c > CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_export_2.c > CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_export_2.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_export_2.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o: ../SRCS/commands/ft_other_commands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands.c > CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands.c > CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.s
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o: ../SRCS/commands/ft_other_commands_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o   -c /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands_2.c
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands_2.c > CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands_2.c > CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.i
 
 CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/commands/ft_other_commands_2.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/commands/ft_other_commands_2.c -o CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.s
 
 CMakeFiles/minishell.dir/SRCS/env/env.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env.c.o: ../SRCS/env/env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/minishell.dir/SRCS/env/env.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/minishell.dir/SRCS/env/env.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env.c.o   -c /Users/schips/Desktop/katya/SRCS/env/env.c
 
 CMakeFiles/minishell.dir/SRCS/env/env.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/env/env.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/env/env.c > CMakeFiles/minishell.dir/SRCS/env/env.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/env/env.c > CMakeFiles/minishell.dir/SRCS/env/env.c.i
 
 CMakeFiles/minishell.dir/SRCS/env/env.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/env/env.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/env/env.c -o CMakeFiles/minishell.dir/SRCS/env/env.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/env/env.c -o CMakeFiles/minishell.dir/SRCS/env/env.c.s
 
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.o: ../SRCS/env/env_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_2.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_2.c.o   -c /Users/schips/Desktop/katya/SRCS/env/env_2.c
 
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/env/env_2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/env/env_2.c > CMakeFiles/minishell.dir/SRCS/env/env_2.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/env/env_2.c > CMakeFiles/minishell.dir/SRCS/env/env_2.c.i
 
 CMakeFiles/minishell.dir/SRCS/env/env_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/env/env_2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/env/env_2.c -o CMakeFiles/minishell.dir/SRCS/env/env_2.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/env/env_2.c -o CMakeFiles/minishell.dir/SRCS/env/env_2.c.s
 
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.o: ../SRCS/env/env_change.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_change.c.o   -c /Users/schips/Desktop/minishell/SRCS/env/env_change.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/env/env_change.c.o   -c /Users/schips/Desktop/katya/SRCS/env/env_change.c
 
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/env/env_change.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/env/env_change.c > CMakeFiles/minishell.dir/SRCS/env/env_change.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/env/env_change.c > CMakeFiles/minishell.dir/SRCS/env/env_change.c.i
 
 CMakeFiles/minishell.dir/SRCS/env/env_change.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/env/env_change.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/env/env_change.c -o CMakeFiles/minishell.dir/SRCS/env/env_change.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/env/env_change.c -o CMakeFiles/minishell.dir/SRCS/env/env_change.c.s
+
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: CMakeFiles/minishell.dir/flags.make
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: ../SRCS/pipe/pipes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o   -c /Users/schips/Desktop/katya/SRCS/pipe/pipes.c
+
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/pipe/pipes.c > CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.i
+
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/pipe/pipes.c -o CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.s
 
 CMakeFiles/minishell.dir/SRCS/main.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/main.c.o: ../SRCS/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/minishell.dir/SRCS/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/main.c.o   -c /Users/schips/Desktop/minishell/SRCS/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/minishell.dir/SRCS/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/main.c.o   -c /Users/schips/Desktop/katya/SRCS/main.c
 
 CMakeFiles/minishell.dir/SRCS/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/main.c > CMakeFiles/minishell.dir/SRCS/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/main.c > CMakeFiles/minishell.dir/SRCS/main.c.i
 
 CMakeFiles/minishell.dir/SRCS/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/main.c -o CMakeFiles/minishell.dir/SRCS/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/main.c -o CMakeFiles/minishell.dir/SRCS/main.c.s
 
 CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: CMakeFiles/minishell.dir/flags.make
 CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o: ../SRCS/parser_check_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o   -c /Users/schips/Desktop/minishell/SRCS/parser_check_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o   -c /Users/schips/Desktop/katya/SRCS/parser_check_line.c
 
 CMakeFiles/minishell.dir/SRCS/parser_check_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minishell.dir/SRCS/parser_check_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/minishell/SRCS/parser_check_line.c > CMakeFiles/minishell.dir/SRCS/parser_check_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/schips/Desktop/katya/SRCS/parser_check_line.c > CMakeFiles/minishell.dir/SRCS/parser_check_line.c.i
 
 CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/minishell/SRCS/parser_check_line.c -o CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/schips/Desktop/katya/SRCS/parser_check_line.c -o CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s
 
 # Object files for target minishell
 minishell_OBJECTS = \
@@ -1057,6 +1070,7 @@ minishell_OBJECTS = \
 "CMakeFiles/minishell.dir/SRCS/env/env.c.o" \
 "CMakeFiles/minishell.dir/SRCS/env/env_2.c.o" \
 "CMakeFiles/minishell.dir/SRCS/env/env_change.c.o" \
+"CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o" \
 "CMakeFiles/minishell.dir/SRCS/main.c.o" \
 "CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o"
 
@@ -1131,11 +1145,12 @@ minishell: CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/env/env.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/env/env_2.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/env/env_change.c.o
+minishell: CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/main.c.o
 minishell: CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o
 minishell: CMakeFiles/minishell.dir/build.make
 minishell: CMakeFiles/minishell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking C executable minishell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable minishell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minishell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1148,6 +1163,6 @@ CMakeFiles/minishell.dir/clean:
 .PHONY : CMakeFiles/minishell.dir/clean
 
 CMakeFiles/minishell.dir/depend:
-	cd /Users/schips/Desktop/minishell/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/schips/Desktop/minishell /Users/schips/Desktop/minishell /Users/schips/Desktop/minishell/cmake-build-debug /Users/schips/Desktop/minishell/cmake-build-debug /Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/minishell.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/schips/Desktop/katya/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/schips/Desktop/katya /Users/schips/Desktop/katya /Users/schips/Desktop/katya/cmake-build-debug /Users/schips/Desktop/katya/cmake-build-debug /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles/minishell.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minishell.dir/depend
 

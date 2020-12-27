@@ -1,6 +1,7 @@
 #include "../shell_header.h"
 
-
+//int READ_END = 0;
+//int WRITE_END = 1;
 
 void		free_arr(char **array)
 {
@@ -82,32 +83,56 @@ int		other_error(t_info *info)
 	return (errno);
 }
 
-int			excex_command(char *command, t_env *env, t_info *info)
+int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 {
 	pid_t	pid;
-	int		ret;
+	//int		status;
 	char	**envp;
+	//int		statusCode;
 
+
+	//statusCode = 0;
 	envp = from_env_to_array(env);
-	ret = 1;
-	//printf("%s\n", command);
 	pid = fork();
-	if (pid == 0)
-	{
-		if ((execve(command, info->args, envp)) == -1)
-//			return (other_error(info));
-			exit (other_error(info));
-		exit(ret);
-	}
-	else if (pid < 0)
+	if (pid < 0)
 		return (error_errno(info));
+	if (general->other_command == 2)
+	{
+		close(general->pipe_fd[1]);
+		dup2(general->pipe_fd[0], 0);
+		close(general->pipe_fd[0]);
+	}
+	else if (pid == 0)
+	{
+		//dup2(info->dup_out, 1);
+		if (general->other_command == 1)
+		{
+			close(general->pipe_fd[0]);
+			dup2(general->pipe_fd[1], 1);
+			close(general->pipe_fd[1]);
+		}
+		/*else if (general->other_command == 2)
+		{
+			close(general->pipe_fd[1]);
+			dup2(general->pipe_fd[0], 0);
+			close(general->pipe_fd[0]);
+		}*/
+		execve(command, info->args, envp);//после execve ничего не работает, как тогда вернуть значениие
+		ft_putendl_fd("After execve", 2);
+		exit(0);
+	}
 	else
 	{
-		//родительский процесс
-		ret = 1;
-		waitpid(pid, &ret, 0);
+		ft_putendl_fd("Before wait pid", 2);
+		wait(NULL);
+		//waitpid(pid, &status, 0);
+		ft_putendl_fd("After wait pid", 2);
+		/*if (WIFEXITED(status))
+		{
+			statusCode = WEXITSTATUS(status);
+		}*/
 	}
-	//printf("%s\n", command);
+	ft_putendl_fd("Hello", 2);
 	return (0);
 }
 
@@ -129,7 +154,9 @@ int					if_file_here(t_info *info, DIR *new)
 	return (0);
 }
 
-int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr)
+//если команды нет в папках path, надо проверить, есть ли команда в нашей актуальной папке, если есть, то выполнять, если нет, то выход: команда не найдена
+
+int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr, t_general *general)
 {
 	int				i;
 	DIR				*new;
@@ -145,7 +172,7 @@ int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr)
 		{
 			if ((full_path = ft_strjoin_path(path_arr[i], info->args[0])) == NULL)	//malloc
 				return (errno);
-			i = excex_command(full_path, env, info);
+			i = excex_command(full_path, env, info, general);
 			free(full_path);
 			return (i);
 		}
@@ -153,11 +180,10 @@ int			ft_other_commands_2(t_info *info, t_env *env, char **path_arr)
 	}
 	if (errno != 0)
 		return (error_errno(info));
-	//printf("no directory in path\n");
-	return (excex_command(info->args[0], env, info));
+	return (excex_command(info->args[0], env, info, general));
 }
 
-int			ft_other_commands(t_info *info, t_env *env)
+int			ft_other_commands(t_info *info, t_env *env, t_general *general)
 {
 	char	*path;
 	char	**path_arr;
@@ -165,12 +191,12 @@ int			ft_other_commands(t_info *info, t_env *env)
 
 	path = find_env(env, "PATH");
 	if (path == NULL)
-		return (excex_command(info->args[0], env, info));
+		return (excex_command(info->args[0], env, info, general));
 	path_arr = ft_split(path, ':');
 	if (path_arr == NULL)
 		return (error_errno(info));
 		//return (error_errno(errno, 1));
-	res = ft_other_commands_2(info, env, path_arr);
+	res = ft_other_commands_2(info, env, path_arr, general);
 	free_arr(path_arr);
 	//if (errno != 0)
 		//return (other_error(info));

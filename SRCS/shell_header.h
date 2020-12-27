@@ -5,8 +5,9 @@
 #include<errno.h>
 #include <dirent.h>
 #include <fcntl.h>
-#include <signal.h>
 
+extern int WRITE_END;
+extern int READ_END;
 int g_res;
 
 //mem_realloc.c
@@ -24,7 +25,7 @@ int		new_letter_red(t_info *parsed, int red_i, char let);
 
 
 //parser_utils.c
-void	two_quot(char *line, t_info *parsed, int *i, t_env *env);
+void	two_quot(char *line, t_info *parsed, int arg_i, int *i);
 void	parse_echo_n(t_info *parsed);
 void	count_args(t_info *parsed);
 
@@ -43,7 +44,6 @@ int		ft_pwd(t_info *info);
 int		ft_cd(t_info *info, t_env *env);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
-int		ft_bigger_str(char *str1, char *str2);
 void	ft_env(t_env *env, int fd);
 void	ft_exit(t_info *info);
 
@@ -55,8 +55,7 @@ t_info	*get_info_export(void);
 
 
 /*Main process */
-int		process(t_env *env, t_info *info);
-
+int		process(t_env *env, t_info *info, t_general *general);
 /* Redirects */
 int			redirect_processing(t_info *info);
 
@@ -81,7 +80,7 @@ t_env	*copy_env(t_env *env);
 void	print_export(t_env *env, int fd);
 void	simple_export(t_env *env, int fd);
 
-int			ft_other_commands(t_info *info, t_env *env);
+int			ft_other_commands(t_info *info, t_env *env, t_general *general);
 char			*ft_strjoin_path(char const *s1, char const *s2);
 
 
@@ -89,9 +88,19 @@ char	*ft_def_strdup(char *s1);
 
 void		*free_other(char *type, char *value);
 t_env		*find_env_env(t_env *env, char *type);
+int ft_bigger_str(char *str1, char *str2);
+
+int			pipe_write_only(t_info *info, t_env *env, t_general *general);
+int			pipe_read_only(t_info *info, t_env *env, t_general *general);
+void		read_from_pipe(int *fd, t_info *info, t_env *env);
+int		command_execution(t_info *info, t_env *env, t_general *general);
 
 //parser.c
 int		parser(char *line, t_info *parsed, t_env *env);
 
 //parser_check_line.c
-void	(char *line, t_info *info);
+int		parser_check_line(char *line, t_info *info);
+void	parser_check_line_skip(char *line, int *i, t_line_check *line_check);
+void	parser_check_line_skip_quot(char *line, int *i, t_line_check *line_check);
+int		parser_check_line_ret(t_info *info);
+void	parser_check_line_util(char *line, t_line_check *line_check, int *i);

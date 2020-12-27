@@ -15,12 +15,12 @@ void	remove_env(t_env **pr, t_env **now, t_env **start)
 
 int ft_bigger_str(char *str1, char *str2)
 {
-	int len;
+	size_t len;
 
 	len = ft_strlen(str1);
-	if (len < (int)ft_strlen(str2))
+	if (len < ft_strlen(str2))
 		len = ft_strlen(str2);
-	return (len);
+	return ((int)len);
 }
 
 int	ft_unset(t_info *info, t_env *env)

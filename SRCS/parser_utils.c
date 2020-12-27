@@ -3,6 +3,10 @@
 void	two_quot(char *line, t_info *parsed, int *i, t_env *env)
 {
 	(*i)++;
+	if (line[*i] == '\"')
+	{
+		new_letter(parsed, parsed->arg_i, (char)"");
+	}
 	while (line[*i] != '\"')
 	{
 		if (line[*i] == '\\' && (line[*i + 1] == '\\' || line[*i + 1] == '\"' || line[*i + 1] == '$'))

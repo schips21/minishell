@@ -7,16 +7,27 @@ typedef struct			s_info
 	void				*next;
 	int					in;
 	int					out;
-
+	int					dup_in;
+	int					dup_out;
 	char				**redirs;
 	int					cur_i;
 	int					pipe;
 	int					pipe_prev;
+	int					right_redir;
+	int					left_redir;
 	int					arg_i;
 	int					res_prev;
-
 	char				**envp;
 }						t_info;
+
+typedef struct		s_general
+{
+	int				*pipe_fd;
+	int				pipe_in_prev_command;
+	int				other_command;
+	int				dup_in;
+	int				dup_out;
+	}				t_general;		
 
 typedef struct		s_red_utils
 {

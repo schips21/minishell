@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_redirects.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_utils.c.o"
+  "CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o"
   "CMakeFiles/minishell.dir/SRCS/process.c.o"
   "CMakeFiles/minishell.dir/SRCS/redirects.c.o"
   "CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o"

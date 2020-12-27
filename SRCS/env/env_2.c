@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 17:41:15 by dskittri          #+#    #+#             */
-/*   Updated: 2020/11/26 17:41:16 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/24 17:52:22 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ t_env		*get_env(char **envp, t_env *first)
 	}
 	if ((find_env_env(first, "OLDPWD")) == NULL)
 	{
-		printf("yes\n");
 		old_pwd = ft_strdup("OLDPWD");
 		if (old_pwd == NULL)
 			return (free_env(first));

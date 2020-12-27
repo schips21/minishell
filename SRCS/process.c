@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 12:36:58 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/04 15:18:21 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/27 14:14:46 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_def_strdup(char *s1)
 	return (p);
 }
 
-int		command_execution(t_info *info, t_env *env)
+int		command_execution(t_info *info, t_env *env, t_general *general)
 {
 	int res;
 	res = 0;
@@ -60,12 +60,9 @@ int		command_execution(t_info *info, t_env *env)
 	else if (ft_strncmp(info->args[0], "echo", 5) == 0)
 		ft_echo(info);
 	else if (ft_strncmp(info->args[0], "exit", 5) == 0)
-	{
 		ft_exit(info);
-		res = g_res;
-	}
 	else
-		res = ft_other_commands(info, env);
+		res = ft_other_commands(info, env, general);
 	return (res);
 }
 
@@ -75,20 +72,58 @@ int		command_execution(t_info *info, t_env *env)
 пайпы выполняют команды параллельно
 */
 
-int		process(t_env *env, t_info *info)
+void	info_fullfillment(t_info *info)
+{
+	info->out = 1;
+}
+
+int		process(t_env *env, t_info *info, t_general *general)
 {
 	int	res;
 
-	res = redirect_processing(info);
-	if (res != 0)
-		return (res);
-	if (info->args != NULL)
-		res = command_execution(info, env);
-//	printf("echo $?\n%i\n", res);
-	if (info->in != 0)
-		close(info->in);
-	if (info->out != 1)
-		close(info->out);
-//	printf("%s", "\nOK\n");
+	res = 0;
+	general->other_command = 0;
+	if (info->pipe == 1)
+	{
+		general->other_command = 1;
+		general->pipe_in_prev_command = 1;
+		if (pipe(general->pipe_fd) < 0)
+			return (-1);
+		//dup2(general->pipe_fd[0], 0);//замена stdin дескриптора на дескриптор pipe[0]
+		//dup2(general->pipe_fd[1], 1);//замена stdout дескриптора на дескриптор pipe[1]
+		res = command_execution(info, env, general);
+		//заменяем все файловые дескрипторы и на вход и на выход
+	}
+	else
+	{
+		if (general->pipe_in_prev_command == 1)
+		{
+			general->other_command = 2;
+			general->pipe_in_prev_command = 0;
+			//char buffer[200];
+			//dup2(general->pipe_fd[0], 0);
+			//read(0, buffer, 100);
+			//printf("%s\n", buffer);
+			/*close(general->pipe_fd[1]);
+			dup2(general->dup_out, 1);
+			char buffer[200];
+			read(0, buffer, 100);
+			printf("%s\n", buffer);*/
+			//замена дескрипторов на вывод, выполнение команды, замена дескрипторов на ввод
+			res = command_execution(info, env, general);
+			printf("HELLO\n");
+			ft_putendl_fd("Hello", 2);
+			//close(general->pipe_fd[0]);
+			//dup2(general->dup_in, 0);
+		}
+		else
+			res = command_execution(info, env, general);
+		//выполнение команды без пайпов
+	}
+	ft_putendl_fd("Hello", 2);
+	// if необходима обратная замена файловых дескрипторов (команда до имела пайп, данна нет)
+	// меняем братно файловые дескрипторы
 	return (res);
 }
+
+

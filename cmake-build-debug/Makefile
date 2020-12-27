@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/schips/Desktop/minishell
+CMAKE_SOURCE_DIR = /Users/schips/Desktop/katya
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/schips/Desktop/minishell/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/schips/Desktop/katya/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles /Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/minishell/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -763,6 +763,33 @@ SRCS/parser_utils.s: SRCS/parser_utils.c.s
 SRCS/parser_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_utils.c.s
 .PHONY : SRCS/parser_utils.c.s
+
+SRCS/pipe/pipes.o: SRCS/pipe/pipes.c.o
+
+.PHONY : SRCS/pipe/pipes.o
+
+# target to build an object file
+SRCS/pipe/pipes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o
+.PHONY : SRCS/pipe/pipes.c.o
+
+SRCS/pipe/pipes.i: SRCS/pipe/pipes.c.i
+
+.PHONY : SRCS/pipe/pipes.i
+
+# target to preprocess a source file
+SRCS/pipe/pipes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.i
+.PHONY : SRCS/pipe/pipes.c.i
+
+SRCS/pipe/pipes.s: SRCS/pipe/pipes.c.s
+
+.PHONY : SRCS/pipe/pipes.s
+
+# target to generate assembly for a file
+SRCS/pipe/pipes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.s
+.PHONY : SRCS/pipe/pipes.c.s
 
 SRCS/process.o: SRCS/process.c.o
 
@@ -2111,6 +2138,9 @@ help:
 	@echo "... SRCS/parser_utils.o"
 	@echo "... SRCS/parser_utils.i"
 	@echo "... SRCS/parser_utils.s"
+	@echo "... SRCS/pipe/pipes.o"
+	@echo "... SRCS/pipe/pipes.i"
+	@echo "... SRCS/pipe/pipes.s"
 	@echo "... SRCS/process.o"
 	@echo "... SRCS/process.i"
 	@echo "... SRCS/process.s"

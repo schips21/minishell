@@ -116,6 +116,11 @@ CMakeFiles/minishell.dir/SRCS/parser_utils.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.o: ../SRCS/structures.h
 CMakeFiles/minishell.dir/SRCS/parser_utils.c.o: ../my_libft/libft.h
 
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: ../SRCS/pipe/pipes.c
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: ../SRCS/shell_header.h
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: ../SRCS/structures.h
+CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o: ../my_libft/libft.h
+
 CMakeFiles/minishell.dir/SRCS/process.c.o: ../SRCS/process.c
 CMakeFiles/minishell.dir/SRCS/process.c.o: ../SRCS/shell_header.h
 CMakeFiles/minishell.dir/SRCS/process.c.o: ../SRCS/structures.h
