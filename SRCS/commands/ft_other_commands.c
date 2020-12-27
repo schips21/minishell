@@ -1,8 +1,5 @@
 #include "../shell_header.h"
 
-//int READ_END = 0;
-//int WRITE_END = 1;
-
 void		free_arr(char **array)
 {
 	int		i;
@@ -18,8 +15,6 @@ void		free_arr(char **array)
 		free(array);
 	}
 }
-
-/*в каком виде принимает полностью*/ 
 
 int			env_len_class_1(t_env *env)
 {
@@ -79,7 +74,6 @@ int		other_error(t_info *info)
 	ft_putstr_fd("minishell: ", 1);
 	ft_putstr_fd(info->args[0], 1);
 	ft_putendl_fd(": command not found", 1);
-	//ft_putendl_fd(strerror(errno), 1);
 	return (errno);
 }
 
@@ -93,46 +87,29 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 
 	//statusCode = 0;
 	envp = from_env_to_array(env);
-	pid = fork();
-	if (pid < 0)
-		return (error_errno(info));
 	if (general->other_command == 2)
 	{
 		close(general->pipe_fd[1]);
 		dup2(general->pipe_fd[0], 0);
 		close(general->pipe_fd[0]);
+		dup2(general->dup_out, 1);
 	}
+	pid = fork();
+	if (pid < 0)
+		return (error_errno(info));
 	else if (pid == 0)
 	{
-		//dup2(info->dup_out, 1);
 		if (general->other_command == 1)
 		{
 			close(general->pipe_fd[0]);
 			dup2(general->pipe_fd[1], 1);
 			close(general->pipe_fd[1]);
 		}
-		/*else if (general->other_command == 2)
-		{
-			close(general->pipe_fd[1]);
-			dup2(general->pipe_fd[0], 0);
-			close(general->pipe_fd[0]);
-		}*/
-		execve(command, info->args, envp);//после execve ничего не работает, как тогда вернуть значениие
-		ft_putendl_fd("After execve", 2);
+		execve(command, info->args, envp);
 		exit(0);
 	}
 	else
-	{
-		ft_putendl_fd("Before wait pid", 2);
 		wait(NULL);
-		//waitpid(pid, &status, 0);
-		ft_putendl_fd("After wait pid", 2);
-		/*if (WIFEXITED(status))
-		{
-			statusCode = WEXITSTATUS(status);
-		}*/
-	}
-	ft_putendl_fd("Hello", 2);
 	return (0);
 }
 
@@ -195,11 +172,9 @@ int			ft_other_commands(t_info *info, t_env *env, t_general *general)
 	path_arr = ft_split(path, ':');
 	if (path_arr == NULL)
 		return (error_errno(info));
-		//return (error_errno(errno, 1));
 	res = ft_other_commands_2(info, env, path_arr, general);
 	free_arr(path_arr);
 	//if (errno != 0)
 		//return (other_error(info));
-		//return (error_errno(errno, 1));
 	return (res);
 }

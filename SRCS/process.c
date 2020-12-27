@@ -6,20 +6,11 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 12:36:58 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/27 14:14:46 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/27 15:11:26 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "shell_header.h"
-
-/*
-res используется для обработки ошибок, сообщение об ошибке будет внутри функции,
-при ошибке res == -1
-необходимо для удобного выхода из процесса
-*/
-
-/*где pipe, redirects обрабатывать?
-int/out fd будут поступать вместе с info*/
 
 char	*ft_def_strdup(char *s1)
 {
@@ -66,12 +57,6 @@ int		command_execution(t_info *info, t_env *env, t_general *general)
 	return (res);
 }
 
-
-/*
-пока не трогаю пайпы
-пайпы выполняют команды параллельно
-*/
-
 void	info_fullfillment(t_info *info)
 {
 	info->out = 1;
@@ -89,10 +74,7 @@ int		process(t_env *env, t_info *info, t_general *general)
 		general->pipe_in_prev_command = 1;
 		if (pipe(general->pipe_fd) < 0)
 			return (-1);
-		//dup2(general->pipe_fd[0], 0);//замена stdin дескриптора на дескриптор pipe[0]
-		//dup2(general->pipe_fd[1], 1);//замена stdout дескриптора на дескриптор pipe[1]
 		res = command_execution(info, env, general);
-		//заменяем все файловые дескрипторы и на вход и на выход
 	}
 	else
 	{
@@ -100,30 +82,10 @@ int		process(t_env *env, t_info *info, t_general *general)
 		{
 			general->other_command = 2;
 			general->pipe_in_prev_command = 0;
-			//char buffer[200];
-			//dup2(general->pipe_fd[0], 0);
-			//read(0, buffer, 100);
-			//printf("%s\n", buffer);
-			/*close(general->pipe_fd[1]);
-			dup2(general->dup_out, 1);
-			char buffer[200];
-			read(0, buffer, 100);
-			printf("%s\n", buffer);*/
-			//замена дескрипторов на вывод, выполнение команды, замена дескрипторов на ввод
 			res = command_execution(info, env, general);
-			printf("HELLO\n");
-			ft_putendl_fd("Hello", 2);
-			//close(general->pipe_fd[0]);
-			//dup2(general->dup_in, 0);
 		}
 		else
 			res = command_execution(info, env, general);
-		//выполнение команды без пайпов
 	}
-	ft_putendl_fd("Hello", 2);
-	// if необходима обратная замена файловых дескрипторов (команда до имела пайп, данна нет)
-	// меняем братно файловые дескрипторы
 	return (res);
 }
-
-

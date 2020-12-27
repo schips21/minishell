@@ -25,7 +25,7 @@ int		new_letter_red(t_info *parsed, int red_i, char let);
 
 
 //parser_utils.c
-void	two_quot(char *line, t_info *parsed, int arg_i, int *i);
+void	two_quot(char *line, t_info *parsed, int *i, t_env *env);
 void	parse_echo_n(t_info *parsed);
 void	count_args(t_info *parsed);
 

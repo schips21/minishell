@@ -92,6 +92,8 @@ int main(int argc, char **argv, char *envp[])
 				free(parsed.redirs);
 			}
 		}
+		dup2(dup_in, 0);//dup
+		dup2(dup_out, 1);//dup
 		if (line)
 		{
 			free(line);
