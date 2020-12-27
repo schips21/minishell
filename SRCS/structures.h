@@ -23,6 +23,7 @@ typedef struct			s_info
 typedef struct		s_general
 {
 	int				*pipe_fd;
+	int				*pipe_fd2;
 	int				pipe_in_prev_command;
 	int				other_command;
 	int				dup_in;

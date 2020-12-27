@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 12:36:58 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/27 15:11:26 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/27 17:29:02 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,10 +78,18 @@ int		process(t_env *env, t_info *info, t_general *general)
 	}
 	else
 	{
-		if (general->pipe_in_prev_command == 1)
+		if (general->pipe_in_prev_command == 1 && info->pipe == 0)
 		{
 			general->other_command = 2;
 			general->pipe_in_prev_command = 0;
+			res = command_execution(info, env, general);
+		}
+		else if (general->pipe_in_prev_command == 1 && info->pipe != 0)
+		{
+			if (pipe(general->pipe_fd2) < 0)
+				return (-1);
+			general->other_command = 3;
+			general->pipe_in_prev_command = 1;
 			res = command_execution(info, env, general);
 		}
 		else

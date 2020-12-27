@@ -94,6 +94,12 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 		close(general->pipe_fd[0]);
 		dup2(general->dup_out, 1);
 	}
+	if (general->other_command == 3)
+	{
+		close(general->pipe_fd[1]);
+		dup2(general->pipe_fd[0], 0);
+		close(general->pipe_fd[0]);//закрытие всех фаловых дескрипторов первого пайпа
+	}
 	pid = fork();
 	if (pid < 0)
 		return (error_errno(info));
@@ -105,11 +111,23 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 			dup2(general->pipe_fd[1], 1);
 			close(general->pipe_fd[1]);
 		}
+		if (general->other_command == 3)
+		{
+			close(general->pipe_fd2[0]);
+			dup2(general->pipe_fd2[1], 1);
+			close(general->pipe_fd2[1]);
+		}
 		execve(command, info->args, envp);
 		exit(0);
 	}
 	else
 		wait(NULL);
+		ft_putendl_fd("pipe", 1);
+	if (general->other_command == 3)
+	{
+		general->pipe_fd[0] = general->pipe_fd2[0];
+		general->pipe_fd[1] = general->pipe_fd2[1];	
+	}
 	return (0);
 }
 
