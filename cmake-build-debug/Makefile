@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/schips/Desktop/katya
+CMAKE_SOURCE_DIR = /Users/schips/Desktop/shell_last
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/schips/Desktop/katya/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/schips/Desktop/shell_last/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/katya/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -763,33 +763,6 @@ SRCS/parser_utils.s: SRCS/parser_utils.c.s
 SRCS/parser_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_utils.c.s
 .PHONY : SRCS/parser_utils.c.s
-
-SRCS/pipe/pipes.o: SRCS/pipe/pipes.c.o
-
-.PHONY : SRCS/pipe/pipes.o
-
-# target to build an object file
-SRCS/pipe/pipes.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.o
-.PHONY : SRCS/pipe/pipes.c.o
-
-SRCS/pipe/pipes.i: SRCS/pipe/pipes.c.i
-
-.PHONY : SRCS/pipe/pipes.i
-
-# target to preprocess a source file
-SRCS/pipe/pipes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.i
-.PHONY : SRCS/pipe/pipes.c.i
-
-SRCS/pipe/pipes.s: SRCS/pipe/pipes.c.s
-
-.PHONY : SRCS/pipe/pipes.s
-
-# target to generate assembly for a file
-SRCS/pipe/pipes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/pipe/pipes.c.s
-.PHONY : SRCS/pipe/pipes.c.s
 
 SRCS/process.o: SRCS/process.c.o
 
@@ -2033,6 +2006,33 @@ my_libft/get_next_line.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line.c.s
 .PHONY : my_libft/get_next_line.c.s
 
+my_libft/get_next_line_return.o: my_libft/get_next_line_return.c.o
+
+.PHONY : my_libft/get_next_line_return.o
+
+# target to build an object file
+my_libft/get_next_line_return.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.o
+.PHONY : my_libft/get_next_line_return.c.o
+
+my_libft/get_next_line_return.i: my_libft/get_next_line_return.c.i
+
+.PHONY : my_libft/get_next_line_return.i
+
+# target to preprocess a source file
+my_libft/get_next_line_return.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.i
+.PHONY : my_libft/get_next_line_return.c.i
+
+my_libft/get_next_line_return.s: my_libft/get_next_line_return.c.s
+
+.PHONY : my_libft/get_next_line_return.s
+
+# target to generate assembly for a file
+my_libft/get_next_line_return.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.s
+.PHONY : my_libft/get_next_line_return.c.s
+
 my_libft/get_next_line_utils.o: my_libft/get_next_line_utils.c.o
 
 .PHONY : my_libft/get_next_line_utils.o
@@ -2138,9 +2138,6 @@ help:
 	@echo "... SRCS/parser_utils.o"
 	@echo "... SRCS/parser_utils.i"
 	@echo "... SRCS/parser_utils.s"
-	@echo "... SRCS/pipe/pipes.o"
-	@echo "... SRCS/pipe/pipes.i"
-	@echo "... SRCS/pipe/pipes.s"
 	@echo "... SRCS/process.o"
 	@echo "... SRCS/process.i"
 	@echo "... SRCS/process.s"
@@ -2279,6 +2276,9 @@ help:
 	@echo "... my_libft/get_next_line.o"
 	@echo "... my_libft/get_next_line.i"
 	@echo "... my_libft/get_next_line.s"
+	@echo "... my_libft/get_next_line_return.o"
+	@echo "... my_libft/get_next_line_return.i"
+	@echo "... my_libft/get_next_line_return.s"
 	@echo "... my_libft/get_next_line_utils.o"
 	@echo "... my_libft/get_next_line_utils.i"
 	@echo "... my_libft/get_next_line_utils.s"

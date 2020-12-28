@@ -37,7 +37,7 @@ int main(int argc, char **argv, char *envp[])
 	char *line = NULL;
 	env = NULL;
 	env = get_env(envp, env);
-	signal(SIGQUIT, SIG_IGN);
+
 	general = fullfill_general();
 	if (general == NULL)
 		return (-1);
@@ -52,9 +52,18 @@ int main(int argc, char **argv, char *envp[])
 		return (0);
 	parsed.cur_i = 0;
 	parsed.pipe_prev = 0;
+//	while (parsed.cur_i != -1)
 	while (get_next_line(0, &line))
 	{
+//		if (get_next_line(0, &line) != 1)
+//			exit(g_res);
+
+
+//		gnl_with_ctrl_d(&line);
 		i = 1;
+
+//		signal(SIGQUIT, SIG_IGN);
+//		signal(SIGINT, SIG_IGN);
 		ft_bzero(&parsed, sizeof(parsed));
 		general->pipe_in_prev_command = 0;
 		while(i != 0)
@@ -64,7 +73,7 @@ int main(int argc, char **argv, char *envp[])
 			ft_bzero(&parsed, sizeof(parsed));
 			parsed.cur_i = tmp;
 			parsed.pipe_prev = tmp_pipe;
-			if (parser_check_line(line, &parsed) == 1)
+			if (parser_check_line(line, &parsed, 0) == 1)
 				break;
 			i = parser(line, &parsed, env);
 			parsed.in = 0;
@@ -103,5 +112,6 @@ int main(int argc, char **argv, char *envp[])
 	dup2(parsed.dup_in, 0);//dup reverse
 	dup2(parsed.dup_out, 1);//dup reverse
 	free(env);
+	write(1, "exit2\n", 6);
 	return (0);
 }

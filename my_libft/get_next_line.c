@@ -83,24 +83,24 @@ int				get_next_line(int fd, char **line)
 	int			count;
 	static char	*residue[256];
 	char		buffer[BUFFER_SIZE + 1];
-	int			flag;
 
-	if (fd < 0 || line == NULL || BUFFER_SIZE <= 0
-			|| (count = read(fd, buffer, 0) < 0))
+	if (line == NULL || (count = read(fd, buffer, 0) < 0))
 		return (-1);
-	flag = 0;
-	while ((count = read(fd, buffer, BUFFER_SIZE)) > 0 || flag == 0)
+	buffer[0] = '\0';
+	while ((count = read(fd, buffer, BUFFER_SIZE)) >= 0)
 	{
-		flag++;
+		if (count == 0 && buffer[0] != '\0')
+		{
+			ft_putstr_fd("  \b\b", 2);
+			buffer[1] = '\0';
+			continue;
+		}
+		else if (count == 0)
+			gnl_exit();
 		if (joining(buffer, count, residue) == -1)
 			return (-1);
 		if ((ft_strchr_gnl(residue[0], '\n')))
 			return (lining(residue, line, ft_strchr_gnl(residue[0], '\n')));
 	}
-	if (residue[0] == NULL)
-		return (0);
-	else if (count < 0)
-		return (error_pr(NULL, residue));
-	else
-		return (after_reading(residue, line));
+	return (gnl_return(residue, line, count));
 }

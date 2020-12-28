@@ -13,7 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define BUFFER_SIZE 10
+# define BUFFER_SIZE 1
 
 # include <stdlib.h>
 # include <stdio.h>
@@ -83,5 +83,7 @@ int					joining(char *buffer, int count, char **residue);
 int					lining(char **residue, char **line, char *x);
 int					after_reading(char **residue, char **line);
 int					error_pr(char **line, char **residue);
+int					gnl_return(char	**residue, char **line, int count);
+int					gnl_exit(void);
 
 #endif

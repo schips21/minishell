@@ -5,6 +5,7 @@
 #include<errno.h>
 #include <dirent.h>
 #include <fcntl.h>
+#include <signal.h>
 
 extern int WRITE_END;
 extern int READ_END;
@@ -15,7 +16,7 @@ int 	new_word_next(t_info *parsed, int i, int j);
 int 	new_word(t_info *parsed);
 int		new_letter_next(t_info *parsed, int arg_i, char let);
 int		new_letter(t_info *parsed, int arg_i, char let);
-int		make_type(t_info *parsed, int n_flag);
+int		make_type(t_info *parsed);
 
 //mem_realloc_redir.c
 int 	new_word_next_red(t_info *parsed, int i, int j);
@@ -32,6 +33,7 @@ void	count_args(t_info *parsed);
 //parser_redirects.c
 void	two_quot_red(char *line, t_info *parsed, int red_i, int *i);
 void	parser_redir(char *line, t_info *parsed, int *i);
+void	parser_redir_symb(char *line, t_info *parsed, int *i,int red_i);
 
 //parser_dollar.c
 char	*pars_dollar_create_env(char *line, int *i, int count);
@@ -99,8 +101,8 @@ int		command_execution(t_info *info, t_env *env, t_general *general);
 int		parser(char *line, t_info *parsed, t_env *env);
 
 //parser_check_line.c
-int		parser_check_line(char *line, t_info *info);
+int		parser_check_line(char *line, t_info *info, int i);
 void	parser_check_line_skip(char *line, int *i, t_line_check *line_check);
-void	parser_check_line_skip_quot(char *line, int *i, t_line_check *line_check);
+void	parser_check_line_skip_quot(char *line, int *i, t_line_check *l_check);
 int		parser_check_line_ret(t_info *info);
 void	parser_check_line_util(char *line, t_line_check *line_check, int *i);

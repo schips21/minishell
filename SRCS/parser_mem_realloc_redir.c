@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser_mem_realloc_redir.c                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/28 22:27:02 by schips            #+#    #+#             */
+/*   Updated: 2020/12/28 22:27:03 by schips           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "shell_header.h"
 
-int 	new_word_next_red(t_info *parsed, int i, int j)
+int		new_word_next_red(t_info *parsed, int i, int j)
 {
 	char	**new;
 
@@ -21,7 +33,7 @@ int 	new_word_next_red(t_info *parsed, int i, int j)
 	return (j);
 }
 
-int 	new_word_red(t_info *parsed)
+int		new_word_red(t_info *parsed)
 {
 	if (!parsed->redirs)
 	{
@@ -32,14 +44,14 @@ int 	new_word_red(t_info *parsed)
 		return (0);
 	}
 	else
-		return(new_word_next_red(parsed, 0, 0));
+		return (new_word_next_red(parsed, 0, 0));
 }
 
 int		new_letter_next_red(t_info *parsed, int red_i, char let)
 {
-	char *new;
-	int len;
-	int i;
+	char	*new;
+	int		len;
+	int		i;
 
 	len = ft_strlen(parsed->redirs[red_i]);
 	if (!(new = malloc(sizeof(char) * (len + 2))))
@@ -68,5 +80,5 @@ int		new_letter_red(t_info *parsed, int red_i, char let)
 		return (0);
 	}
 	else
-		return(new_letter_next_red(parsed, red_i, let));
+		return (new_letter_next_red(parsed, red_i, let));
 }

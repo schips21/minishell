@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser_dollar.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/28 22:22:59 by schips            #+#    #+#             */
+/*   Updated: 2020/12/28 22:23:01 by schips           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "shell_header.h"
 
 char	*pars_dollar_create_env(char *line, int *i, int count)
 {
-	int j;
+	int		j;
 	char	*env_var;
 
 	if (!(env_var = malloc(sizeof(char) * (count + 1))))
 		return (0);
 	j = 0;
-	while(j < count)
+	while (j < count)
 		env_var[j++] = line[(*i)++];
 	env_var[j] = '\0';
 	return (env_var);
@@ -44,7 +56,7 @@ void	pars_dollar_env(t_info *parsed, t_env *env, int arg_i, char *env_str)
 		finded_end = find_env(env, env_str);
 	if (finded_end)
 		path_env = ft_strdup(finded_end);
-	free (env_str);
+	free(env_str);
 	i = 0;
 	if (path_env)
 	{

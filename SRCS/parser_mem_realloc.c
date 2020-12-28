@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser_mem_realloc.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/28 22:24:32 by schips            #+#    #+#             */
+/*   Updated: 2020/12/28 22:24:33 by schips           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "shell_header.h"
 
-int 	new_word_next(t_info *parsed, int i, int j)
+int		new_word_next(t_info *parsed, int i, int j)
 {
 	char	**new;
 
@@ -16,12 +28,11 @@ int 	new_word_next(t_info *parsed, int i, int j)
 		j++;
 	}
 	free(parsed->args);
-//	parsed->args = NULL;
 	parsed->args = new;
 	return (j);
 }
 
-int 	new_word(t_info *parsed)
+int		new_word(t_info *parsed)
 {
 	if (!parsed->args)
 	{
@@ -32,14 +43,14 @@ int 	new_word(t_info *parsed)
 		return (0);
 	}
 	else
-		return(new_word_next(parsed, 0, 0));
+		return (new_word_next(parsed, 0, 0));
 }
 
 int		new_letter_next(t_info *parsed, int arg_i, char let)
 {
-	char *new;
-	int len;
-	int i;
+	char	*new;
+	int		len;
+	int		i;
 
 	len = ft_strlen(parsed->args[arg_i]);
 	if (!(new = malloc(sizeof(char) * (len + 2))))
@@ -68,24 +79,22 @@ int		new_letter(t_info *parsed, int arg_i, char let)
 		return (0);
 	}
 	else
-		return(new_letter_next(parsed, arg_i, let));
+		return (new_letter_next(parsed, arg_i, let));
 }
 
-int		make_type(t_info *parsed, int n_flag)
+int		make_type(t_info *parsed)
 {
 	char	**new;
-	int i;
-	int j;
+	int		i;
+	int		j;
 
-	if (n_flag == 0)
-		n_flag = 0;
 	i = 1;
 	while (parsed->args[i])
 		i++;
 	if (!(new = malloc(sizeof(char *) * (i))))
 		return (0);
 	new[i - 1] = NULL;
-	new[0] =  parsed->args[0];
+	new[0] = parsed->args[0];
 	j = 1;
 	while (j < i - 1)
 	{
@@ -94,7 +103,6 @@ int		make_type(t_info *parsed, int n_flag)
 	}
 	free(parsed->args);
 	parsed->args = NULL;
-	//чтобы не было сигаборта для случая, когда у нас только тип, а аргумента нет
 	if (new[0])
 		parsed->args = new;
 	else

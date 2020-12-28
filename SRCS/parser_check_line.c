@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parser_check_line.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/28 22:21:56 by schips            #+#    #+#             */
+/*   Updated: 2020/12/28 22:21:59 by schips           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "shell_header.h"
 
-void	parser_check_line_skip_quot(char *line, int *i, t_line_check *line_check)
+void	parser_check_line_skip_quot(char *line, int *i, t_line_check *l_check)
 {
 	(*i)++;
 	while (!(line[*i] == '\"' && line[*i - 1] != '\\') && line[*i] != '\0')
 	{
-		line_check->symb++;
+		l_check->symb++;
 		(*i)++;
 	}
 }
@@ -49,12 +61,10 @@ void	parser_check_line_util(char *line, t_line_check *line_check, int *i)
 		parser_check_line_skip(line, i, line_check);
 }
 
-int		parser_check_line(char *line, t_info *info)
+int		parser_check_line(char *line, t_info *info, int i)
 {
-	int i;
-	t_line_check line_check;
+	t_line_check	line_check;
 
-	i = 0;
 	while (line[i] != '\0')
 	{
 		parser_check_line_util(line, &line_check, &i);
@@ -69,8 +79,7 @@ int		parser_check_line(char *line, t_info *info)
 		}
 		else if (line[i] == '>')
 		{
-			i++;
-			if (line[i] == '>')
+			if (line[++i] == '>')
 				i++;
 			parser_check_line_util(line, &line_check, &i);
 			if (line_check.symb == 0)

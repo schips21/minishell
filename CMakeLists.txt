@@ -52,6 +52,7 @@ add_executable(minishell
         my_libft/ft_toupper.c
         my_libft/get_next_line.c
         my_libft/get_next_line_utils.c
+        my_libft/get_next_line_return.c
         my_libft/libft.h
         SRCS/parser.c
         SRCS/parser_mem_realloc.c
@@ -80,7 +81,6 @@ add_executable(minishell
         SRCS/env/env.c
         SRCS/env/env_2.c
         SRCS/env/env_change.c
-        SRCS/pipe/pipes.c
         SRCS/main.c
         SRCS/parser_check_line.c
         )

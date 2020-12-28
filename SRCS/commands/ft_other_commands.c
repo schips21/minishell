@@ -82,10 +82,12 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 	pid_t	pid;
 	//int		status;
 	char	**envp;
+	int		i;
 	//int		statusCode;
 
 
 	//statusCode = 0;
+	i = 0;
 	envp = from_env_to_array(env);
 	if (general->other_command == 2)
 	{
@@ -93,12 +95,6 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 		dup2(general->pipe_fd[0], 0);
 		close(general->pipe_fd[0]);
 		dup2(general->dup_out, 1);
-	}
-	if (general->other_command == 3)
-	{
-		close(general->pipe_fd[1]);
-		dup2(general->pipe_fd[0], 0);
-		close(general->pipe_fd[0]);//закрытие всех фаловых дескрипторов первого пайпа
 	}
 	pid = fork();
 	if (pid < 0)
@@ -111,23 +107,19 @@ int			excex_command(char *command, t_env *env, t_info *info, t_general *general)
 			dup2(general->pipe_fd[1], 1);
 			close(general->pipe_fd[1]);
 		}
-		if (general->other_command == 3)
-		{
-			close(general->pipe_fd2[0]);
-			dup2(general->pipe_fd2[1], 1);
-			close(general->pipe_fd2[1]);
-		}
-		execve(command, info->args, envp);
+		//Изменения 28.12
+//		execve(command, info->args, envp);
+		if ((execve(command, info->args, envp)) == -1)
+//			return (other_error(info));
+			exit (other_error(info));
 		exit(0);
 	}
 	else
 		wait(NULL);
-		ft_putendl_fd("pipe", 1);
-	if (general->other_command == 3)
-	{
-		general->pipe_fd[0] = general->pipe_fd2[0];
-		general->pipe_fd[1] = general->pipe_fd2[1];	
-	}
+	//Изменения 28.12
+	while (envp[i])
+		free(envp[i++]);
+	free(envp);
 	return (0);
 }
 
@@ -183,7 +175,9 @@ int			ft_other_commands(t_info *info, t_env *env, t_general *general)
 	char	*path;
 	char	**path_arr;
 	int		res;
+	int		i;
 
+	i = 0;
 	path = find_env(env, "PATH");
 	if (path == NULL)
 		return (excex_command(info->args[0], env, info, general));
@@ -191,7 +185,11 @@ int			ft_other_commands(t_info *info, t_env *env, t_general *general)
 	if (path_arr == NULL)
 		return (error_errno(info));
 	res = ft_other_commands_2(info, env, path_arr, general);
-	free_arr(path_arr);
+	//Изменения 28.12
+//	free_arr(path_arr);
+	while (path_arr[i])
+		free(path_arr[i++]);
+	free(path_arr);
 	//if (errno != 0)
 		//return (other_error(info));
 	return (res);
