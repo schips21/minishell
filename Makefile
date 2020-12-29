@@ -1,5 +1,4 @@
 SOURCES = SRCS/*.c SRCS/commands/*.c SRCS/env/*.c
-
 NAME = minishell
 
 HEADER = SRCS/shell_header.h SRCS/structures.h 

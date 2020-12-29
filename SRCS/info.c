@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   info.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 17:41:11 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/04 15:29:35 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/29 19:41:58 by schips           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ t_info		*get_info_echo(void)
 	return (info);
 }
 
-
 t_info		*get_info_export(void)
 {
 	t_info	*info;
@@ -33,7 +32,7 @@ t_info		*get_info_export(void)
 	info = malloc(sizeof(t_info));
 	info->type = ft_strdup("export");
 	info->args_num = 4;
-	info->args = malloc(sizeof(char **)*4);
+	info->args = malloc(sizeof(char **) * 4);
 	(info->args)[0] = ft_strdup("PO=f");
 	(info->args)[1] = ft_strdup("F=");
 	(info->args)[2] = ft_strdup("8");
@@ -46,7 +45,7 @@ t_info		*get_info_pwd(void)
 	t_info	*info;
 
 	info = malloc(sizeof(t_info));
-	info->type = ft_strdup("pwd"); //pwd
+	info->type = ft_strdup("pwd");
 	info->n_flag = 0;
 	info->args = NULL;
 	info->args_num = 0;
@@ -68,7 +67,7 @@ t_info		*get_info_cd(void)
 	t_info	*info;
 
 	info = malloc(sizeof(t_info));
-	info->type = ft_strdup("cd"); //cd
+	info->type = ft_strdup("cd");
 	info->n_flag = 0;
 	info->args = malloc(sizeof(char **));
 	(info->args)[0] = strdup("popopo");

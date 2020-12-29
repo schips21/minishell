@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/schips/Desktop/shell_last/my_libft -I/Users/schips/Desktop/shell_last/SRCS 
+C_INCLUDES = -I/Users/schips/Desktop/shell_with_k/my_libft -I/Users/schips/Desktop/shell_with_k/SRCS 
 

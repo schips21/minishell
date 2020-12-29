@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_export.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/29 19:41:41 by dskittri          #+#    #+#             */
+/*   Updated: 2020/12/29 19:41:45 by dskittri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../shell_header.h"
 
 int	export_error(char *err, int fd, int i)
@@ -72,7 +84,7 @@ int			new_var(t_env *env, char *str)
 {
 	char 	*type;
 	t_env	*new;
-	
+
 	if (ft_strchr(str, '=') != NULL)
 		type = ft_strdup_sp(str, '=');
 	else
@@ -89,6 +101,13 @@ int			new_var(t_env *env, char *str)
 	return (errno);
 }
 
+int		is_ok_sign(char a)
+{
+	if (a == '_')
+		return (1);
+	return (ft_isalpha(a));
+}
+
 int		ft_export(t_info *info, t_env *env, int fd)
 {
 	int	i;
@@ -102,14 +121,14 @@ int		ft_export(t_info *info, t_env *env, int fd)
 		i = 1;
 		while (info->args[i] != NULL)
 		{
-			if (ft_isalpha(info->args[i][0]) == 0)
-				res = export_error(info->args[i], 1, 1);
+			if (is_ok_sign(info->args[i][0]) == 0)
+				res = export_error(info->args[i], 2, 1);
 			else
 				errno = new_var(env, info->args[i]);
 			i++;
 		}
 		if (errno != 0)
-			return (export_error(info->args[i], 1, 2));
+			return (export_error(info->args[i], 2, 2));
 	}
 	return (res);
 }

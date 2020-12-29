@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 17:42:03 by dskittri          #+#    #+#             */
-/*   Updated: 2020/11/26 18:32:40 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/28 21:58:10 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ int		ft_pwd(t_info *info)
 		ft_putendl_fd(strerror(errno), 1);
 		return (errno);
 	}
-	ft_putendl_fd(pwd, info->out);
+	//ft_putendl_fd(pwd, info->out);
+	ft_putendl_fd(pwd, 1);
 	if (pwd)
 		free(pwd);
 	return (0);

@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/schips/Desktop/shell_last
+CMAKE_SOURCE_DIR = /Users/schips/Desktop/shell_with_k
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/schips/Desktop/shell_last/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/schips/Desktop/shell_with_k/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles /Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -628,6 +628,33 @@ SRCS/parser_check_line.s: SRCS/parser_check_line.c.s
 SRCS/parser_check_line.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line.c.s
 .PHONY : SRCS/parser_check_line.c.s
+
+SRCS/parser_check_line_utils.o: SRCS/parser_check_line_utils.c.o
+
+.PHONY : SRCS/parser_check_line_utils.o
+
+# target to build an object file
+SRCS/parser_check_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line_utils.c.o
+.PHONY : SRCS/parser_check_line_utils.c.o
+
+SRCS/parser_check_line_utils.i: SRCS/parser_check_line_utils.c.i
+
+.PHONY : SRCS/parser_check_line_utils.i
+
+# target to preprocess a source file
+SRCS/parser_check_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line_utils.c.i
+.PHONY : SRCS/parser_check_line_utils.c.i
+
+SRCS/parser_check_line_utils.s: SRCS/parser_check_line_utils.c.s
+
+.PHONY : SRCS/parser_check_line_utils.s
+
+# target to generate assembly for a file
+SRCS/parser_check_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/parser_check_line_utils.c.s
+.PHONY : SRCS/parser_check_line_utils.c.s
 
 SRCS/parser_dollar.o: SRCS/parser_dollar.c.o
 
@@ -2123,6 +2150,9 @@ help:
 	@echo "... SRCS/parser_check_line.o"
 	@echo "... SRCS/parser_check_line.i"
 	@echo "... SRCS/parser_check_line.s"
+	@echo "... SRCS/parser_check_line_utils.o"
+	@echo "... SRCS/parser_check_line_utils.i"
+	@echo "... SRCS/parser_check_line_utils.s"
 	@echo "... SRCS/parser_dollar.o"
 	@echo "... SRCS/parser_dollar.i"
 	@echo "... SRCS/parser_dollar.s"

@@ -25,6 +25,6 @@ int		gnl_return(char **residue, char **line, int count)
 int		gnl_exit(void)
 {
 	ft_putstr_fd("  \b\b", 2);
-	ft_putstr_fd("minishell$ exit", 2);
+	ft_putstr_fd("exit", 2);
 	exit(0);
 }

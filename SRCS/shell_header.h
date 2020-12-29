@@ -5,7 +5,6 @@
 #include<errno.h>
 #include <dirent.h>
 #include <fcntl.h>
-#include <signal.h>
 
 extern int WRITE_END;
 extern int READ_END;
@@ -47,7 +46,7 @@ int		ft_cd(t_info *info, t_env *env);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
 void	ft_env(t_env *env, int fd);
-void	ft_exit(t_info *info);
+int		ft_exit(t_info *info);
 
 /* Ready structures for commands */
 t_info	*get_info_echo(void);
@@ -83,7 +82,7 @@ void	print_export(t_env *env, int fd);
 void	simple_export(t_env *env, int fd);
 
 int			ft_other_commands(t_info *info, t_env *env, t_general *general);
-char			*ft_strjoin_path(char const *s1, char const *s2);
+char			*ft_strjoin_path(char const *s1, char const *s2, char a);
 
 
 char	*ft_def_strdup(char *s1);
@@ -99,10 +98,25 @@ int		command_execution(t_info *info, t_env *env, t_general *general);
 
 //parser.c
 int		parser(char *line, t_info *parsed, t_env *env);
+int		parser_return(char *line, t_info *parsed, int i);
+void	parser_dollar_start(char *line, t_info *parsed, t_env *env, int *i);
+void	parser_spec(char *line, t_info *parsed, t_env *env, int *i);
 
 //parser_check_line.c
 int		parser_check_line(char *line, t_info *info, int i);
-void	parser_check_line_skip(char *line, int *i, t_line_check *line_check);
-void	parser_check_line_skip_quot(char *line, int *i, t_line_check *l_check);
-int		parser_check_line_ret(t_info *info);
-void	parser_check_line_util(char *line, t_line_check *line_check, int *i);
+int	parser_check_line_skip(char *line, int *i, t_line_check *line_check);
+int	parser_check_line_skip_quot(char *line, int *i, t_line_check *l_check);
+int		parser_check_line_skip_q_one(char *line, int *i, t_line_check *l_check);
+int		parser_check_line_ret(void);
+int	parser_check_line_util(char *line, t_line_check *line_check, int *i);
+int		parser_check_l_red(char *l, t_info *info, int *i, t_line_check *l_check);
+
+int			error_errno(t_info *info);
+char		**from_env_to_array(t_env *env);
+int			if_file_here(t_info *info, DIR *new);
+void		free_arr(char **array);
+int			other_error(t_info *info);
+
+//main.c
+void		main_init_gnl(int *i, t_info *parsed, t_general *general);
+void		main_free_args_redirs(t_info *parsed, int j);

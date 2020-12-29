@@ -22,12 +22,16 @@ typedef struct			s_info
 
 typedef struct		s_general
 {
-	int				*pipe_fd;
-	int				pipe_in_prev_command;
+    int				*pipe_fd2;
 	int				other_command;
-	int				dup_in;
-	int				dup_out;
-	}				t_general;		
+    int				dup_in;
+    int				dup_out;
+	int             i;
+	int             pipe_n;
+    int             prev_pipe;
+    int				*pipe_fd3;
+    int				*pipe_fd;
+}				    t_general;
 
 typedef struct		s_red_utils
 {

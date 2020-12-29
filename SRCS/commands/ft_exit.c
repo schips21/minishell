@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_exit.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/29 19:41:32 by dskittri          #+#    #+#             */
+/*   Updated: 2020/12/29 19:41:34 by dskittri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../shell_header.h"
 
-void	ft_exit(t_info *info)
+int	ft_exit(t_info *info)
 {
 	int i;
 
@@ -43,4 +55,5 @@ void	ft_exit(t_info *info)
 			exit(g_res);
 		}
 	}
+	return (g_res);
 }

@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_export_2.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/29 19:41:37 by dskittri          #+#    #+#             */
+/*   Updated: 2020/12/29 19:41:38 by dskittri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../shell_header.h"
 
 void	ft_change_elem(t_env **previous, t_env **first, t_env **second, t_env **start)
 {
 	t_env *tmp;
-	
+
 	(*first)->next = (*second)->next;
 	(*second)->next = *first;
 	tmp = *second;
@@ -47,7 +59,7 @@ t_env	*copy_env(t_env *env)
 	t_env 	*copy;
 	char 	*new_type;
 	char 	*new_value;
-	
+
 	new_type = ft_strdup(env->type);
 	new_value = ft_def_strdup(env->value);
 	copy_start = ft_envnew(new_type, new_value, env->class);

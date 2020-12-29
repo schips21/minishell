@@ -83,4 +83,5 @@ add_executable(minishell
         SRCS/env/env_change.c
         SRCS/main.c
         SRCS/parser_check_line.c
+        SRCS/parser_check_line_utils.c
         )

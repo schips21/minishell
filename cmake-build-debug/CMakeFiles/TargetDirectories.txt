@@ -1,3 +1,3 @@
-/Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/schips/Desktop/shell_last/cmake-build-debug/CMakeFiles/minishell.dir
+/Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/schips/Desktop/shell_with_k/cmake-build-debug/CMakeFiles/minishell.dir

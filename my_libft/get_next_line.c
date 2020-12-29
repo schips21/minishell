@@ -84,6 +84,7 @@ int				get_next_line(int fd, char **line)
 	static char	*residue[256];
 	char		buffer[BUFFER_SIZE + 1];
 
+	write(1, "minishell: ", 11);
 	if (line == NULL || (count = read(fd, buffer, 0) < 0))
 		return (-1);
 	buffer[0] = '\0';

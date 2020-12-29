@@ -6,7 +6,7 @@
 /*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 22:38:42 by schips            #+#    #+#             */
-/*   Updated: 2020/12/28 22:38:43 by schips           ###   ########.fr       */
+/*   Updated: 2020/12/29 21:47:36 by schips           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	two_quot(char *line, t_info *parsed, int *i, t_env *env)
 	(*i)++;
 	if (line[*i] == '\"')
 	{
-		new_letter(parsed, parsed->arg_i, (char)"");
+		new_letter(parsed, parsed->arg_i, '\0');
 	}
 	while (line[*i] != '\"')
 	{

@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/minishell.dir/SRCS/main.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o"
+  "CMakeFiles/minishell.dir/SRCS/parser_check_line_utils.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_dollar.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_mem_realloc.c.o"
   "CMakeFiles/minishell.dir/SRCS/parser_mem_realloc_redir.c.o"
