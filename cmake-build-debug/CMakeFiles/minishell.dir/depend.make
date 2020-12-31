@@ -250,12 +250,8 @@ CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o: ../my_libft/ft_tolower.c
 
 CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o: ../my_libft/ft_toupper.c
 
-CMakeFiles/minishell.dir/my_libft/get_next_line.c.o: ../my_libft/get_next_line.c
-CMakeFiles/minishell.dir/my_libft/get_next_line.c.o: ../my_libft/libft.h
 
 CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.o: ../my_libft/get_next_line_return.c
 CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.o: ../my_libft/libft.h
 
-CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o: ../my_libft/get_next_line_utils.c
-CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o: ../my_libft/libft.h
 

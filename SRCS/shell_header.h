@@ -9,6 +9,7 @@
 extern int WRITE_END;
 extern int READ_END;
 int g_res;
+int g_ctrl_d;
 
 //mem_realloc.c
 int 	new_word_next(t_info *parsed, int i, int j);
@@ -120,3 +121,4 @@ int			other_error(t_info *info);
 //main.c
 void		main_init_gnl(int *i, t_info *parsed, t_general *general);
 void		main_free_args_redirs(t_info *parsed, int j);
+void		listener(int signal);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   process.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 12:36:58 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/29 22:18:30 by schips           ###   ########.fr       */
+/*   Updated: 2020/12/31 13:38:54 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,6 +149,14 @@ int		if_parent_process(t_info *info, t_env *env)
 	return (res);
 }
 
+void		listener2(int signal)
+{
+	if (signal == SIGINT)//ctrl-c
+	{
+		//write(1, "\n", 2);
+	}
+}
+
 int		command_execution(t_info *info, t_env *env, t_general *general)
 {
 	int			res;
@@ -228,8 +236,30 @@ int		command_execution(t_info *info, t_env *env, t_general *general)
 		}
 		exit(res);
 	}
-	wait(&stat);
-	return (WEXITSTATUS(stat));
+	signal(SIGINT, SIG_IGN);//
+	signal(SIGINT, listener2);//
+	waitpid(pid, &stat, WUNTRACED);//ошибка не чувствительня к сигналам
+	//wait(&stat);
+	//stat = WEXITSTATUS(stat);
+	//printf("%i\n", stat);
+	if (WIFSIGNALED(stat))
+	{
+		if (WTERMSIG(stat) == 2)
+		{
+			stat = 130;
+			//printf("130\n");
+		}
+		else if (WTERMSIG(stat) == 3)
+		{
+			stat = 131;
+			//printf("131\n");
+		}
+	}
+	else
+		stat = WEXITSTATUS(stat);
+	signal(SIGINT, listener);
+	signal(SIGQUIT, listener);
+	return (stat);
 }
 
 void	info_fullfillment(t_info *info)

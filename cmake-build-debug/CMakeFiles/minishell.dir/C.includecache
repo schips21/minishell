@@ -6,117 +6,117 @@
 
 #IncludeRegexTransform: 
 
-/Users/schips/Desktop/shell_with_k/SRCS/check_work.c
+/Users/dskittri/Desktop/minishell_full/SRCS/check_work.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_cd.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_cd.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_echo.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_echo.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_env.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_env.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_exit.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_exit.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_export.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_export_2.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_2.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_other_commands.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_other_commands.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_other_commands_2.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_other_commands_2.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_pwd.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_pwd.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/commands/ft_unset.c
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_unset.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/env/env.c
+/Users/dskittri/Desktop/minishell_full/SRCS/env/env.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/env/env_2.c
+/Users/dskittri/Desktop/minishell_full/SRCS/env/env_2.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/env/env_change.c
+/Users/dskittri/Desktop/minishell_full/SRCS/env/env_change.c
 ../shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/info.c
+/Users/dskittri/Desktop/minishell_full/SRCS/info.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/main.c
+/Users/dskittri/Desktop/minishell_full/SRCS/main.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_check_line.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_check_line.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_check_line_utils.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_check_line_utils.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_dollar.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_dollar.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_mem_realloc.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_mem_realloc.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_mem_realloc_redir.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_mem_realloc_redir.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_redirects.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_redirects.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/parser_utils.c
+/Users/dskittri/Desktop/minishell_full/SRCS/parser_utils.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/process.c
+/Users/dskittri/Desktop/minishell_full/SRCS/process.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/redirects.c
+/Users/dskittri/Desktop/minishell_full/SRCS/redirects.c
 shell_header.h
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/schips/Desktop/shell_with_k/SRCS/shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 string.h
 -
 structures.h
-/Users/schips/Desktop/shell_with_k/SRCS/structures.h
+/Users/dskittri/Desktop/minishell_full/SRCS/structures.h
 ../my_libft/libft.h
-/Users/schips/Desktop/shell_with_k/my_libft/libft.h
+/Users/dskittri/Desktop/minishell_full/my_libft/libft.h
 unistd.h
 -
 errno.h
@@ -126,9 +126,9 @@ dirent.h
 fcntl.h
 -
 
-/Users/schips/Desktop/shell_with_k/SRCS/structures.h
+/Users/dskittri/Desktop/minishell_full/SRCS/structures.h
 
-/Users/schips/Desktop/shell_with_k/my_libft/libft.h
+/Users/dskittri/Desktop/minishell_full/my_libft/libft.h
 stdlib.h
 -
 stdio.h

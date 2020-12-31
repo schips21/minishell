@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 14:40:59 by dskittri          #+#    #+#             */
-/*   Updated: 2020/10/16 05:43:57 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/31 13:03:32 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,10 @@ int				get_next_line(int fd, char **line)
 	int			count;
 	static char	*residue[256];
 	char		buffer[BUFFER_SIZE + 1];
-
+	
+	g_ctrl_d = 0;
 	write(1, "minishell: ", 11);
+	//write(1, "minishell gnl: ", 15);
 	if (line == NULL || (count = read(fd, buffer, 0) < 0))
 		return (-1);
 	buffer[0] = '\0';

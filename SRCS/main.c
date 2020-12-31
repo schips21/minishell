@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 19:42:26 by schips            #+#    #+#             */
-/*   Updated: 2020/12/29 21:59:22 by schips           ###   ########.fr       */
+/*   Updated: 2020/12/31 14:19:29 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,17 @@ void		free_general_info(t_general *general, t_info *info)
 
 void		listener(int signal)
 {
-	if (signal == SIGINT)
+	if (signal == SIGINT)//ctrl-c
 	{
 		write(1, "\b\b  \b\b", 6);
 		write(1, "\n", 1);
-		write(1, "minishell: ", 11);
+		//write(1, "minishell: ", 11);
+		write(1, "minishell listner: ", 19);
+		g_res = 1;
 	}
-	else if (signal == SIGQUIT)
+	else if (signal == SIGQUIT)//ctrl-d
 	{
+		g_ctrl_d = 1;
 		write(1, "\b\b  \b\b", 6);
 	}
 }
@@ -123,6 +126,7 @@ int			main(int argc, char **argv, char *envp[])
 		return (0);
 	parsed.cur_i = 0;
 	parsed.pipe_prev = 0;
+	g_ctrl_d = 0;
 	while (get_next_line(0, &line))
 	{
 		main_init_gnl(&i, &parsed, general);
@@ -145,18 +149,27 @@ int			main(int argc, char **argv, char *envp[])
 				parsed.args = NULL;
 				i = 0;
 			}
+			if (g_ctrl_d == 1)
+			{
+				//очищение
+				break;
+			}
 			g_res = process(env, &parsed, general);
 			if (parsed.right_redir == 1)
 			{
 				dup2(dup_out, 1);
 				parsed.right_redir = 0;
 			}
+			if (g_res == 130 || g_res == 131)
+				write(1, "\n", 1);
 			if (parsed.left_redir == 1)
 			{
 				dup2(dup_in, 0);
 				parsed.left_redir = 0;
 			}
 			main_free_args_redirs(&parsed, 0);
+			g_ctrl_d = 0;
+			//printf("echo $? %i\n", g_res);
 		}
 		dup2(dup_in, 0);
 		dup2(dup_out, 1);
