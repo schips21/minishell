@@ -6,28 +6,28 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 19:41:37 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/29 19:41:38 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/31 15:18:13 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../shell_header.h"
 
-void	ft_change_elem(t_env **previous, t_env **first, t_env **second, t_env **start)
+void		ft_chng_elem(t_env **prev, t_env **fir, t_env **sec, t_env **start)
 {
-	t_env *tmp;
+	t_env	*tmp;
 
-	(*first)->next = (*second)->next;
-	(*second)->next = *first;
-	tmp = *second;
-	*second = *first;
-	*first = tmp;
-	if (*previous == NULL)
-		*start = *first;
+	(*fir)->next = (*sec)->next;
+	(*sec)->next = *fir;
+	tmp = *sec;
+	*sec = *fir;
+	*fir = tmp;
+	if (*prev == NULL)
+		*start = *fir;
 	else
-		(*previous)->next = *first;
+		(*prev)->next = *fir;
 }
 
-t_env	*sort_env(t_env *start)
+t_env		*sort_env(t_env *start)
 {
 	t_env	*final;
 	t_env	*first;
@@ -35,7 +35,7 @@ t_env	*sort_env(t_env *start)
 	t_env	*previous;
 
 	final = NULL;
-	while(final != start)
+	while (final != start)
 	{
 		previous = NULL;
 		second = start->next;
@@ -43,22 +43,22 @@ t_env	*sort_env(t_env *start)
 		while (second != final)
 		{
 			if (ft_strncmp(first->type, second->type, 150) > 0)
-				ft_change_elem(&previous, &first, &second, &start);
+				ft_chng_elem(&previous, &first, &second, &start);
 			previous = first;
 			first = second;
 			second = second->next;
 		}
 		final = first;
 	}
-	return(start);
+	return (start);
 }
 
-t_env	*copy_env(t_env *env)
+t_env		*copy_env(t_env *env)
 {
 	t_env	*copy_start;
-	t_env 	*copy;
-	char 	*new_type;
-	char 	*new_value;
+	t_env	*copy;
+	char	*new_type;
+	char	*new_value;
 
 	new_type = ft_strdup(env->type);
 	new_value = ft_def_strdup(env->value);
@@ -75,7 +75,7 @@ t_env	*copy_env(t_env *env)
 	return (copy_start);
 }
 
-void	print_export(t_env *env, int fd)
+void		print_export(t_env *env, int fd)
 {
 	while (env != NULL)
 	{
@@ -92,9 +92,9 @@ void	print_export(t_env *env, int fd)
 	}
 }
 
-void	simple_export(t_env *env, int fd)
+void		simple_export(t_env *env, int fd)
 {
-	t_env *new;
+	t_env	*new;
 
 	new = sort_env(copy_env(env));
 	print_export(new, fd);

@@ -50,9 +50,9 @@ add_executable(minishell
         my_libft/ft_substr.c
         my_libft/ft_tolower.c
         my_libft/ft_toupper.c
-        my_libft/get_next_line.c
-        my_libft/get_next_line_utils.c
-        my_libft/get_next_line_return.c
+        SRCS/get_next_line.c
+        SRCS/get_next_line_utils.c
+        SRCS/get_next_line_return.c
         my_libft/libft.h
         SRCS/parser.c
         SRCS/parser_mem_realloc.c
@@ -62,12 +62,10 @@ add_executable(minishell
         SRCS/parser_utils.c
         SRCS/parser_redirects.c
         SRCS/parser_dollar.c
-
-        SRCS/check_work.c
-        SRCS/info.c
         SRCS/process.c
         SRCS/redirects.c
-
+        SRCS/signals.c
+        SRCS/free_structures.c
         SRCS/commands/ft_echo.c
         SRCS/commands/ft_env.c
         SRCS/commands/ft_cd.c
@@ -76,11 +74,11 @@ add_executable(minishell
         SRCS/commands/ft_unset.c
         SRCS/commands/ft_exit.c
         SRCS/commands/ft_export_2.c
+        SRCS/commands/ft_export_3.c
         SRCS/commands/ft_other_commands.c
         SRCS/commands/ft_other_commands_2.c
         SRCS/env/env.c
         SRCS/env/env_2.c
-        SRCS/env/env_change.c
         SRCS/main.c
         SRCS/parser_check_line.c
         SRCS/parser_check_line_utils.c

@@ -47,7 +47,7 @@ int		ft_cd(t_info *info, t_env *env);
 int		ft_export(t_info *info, t_env *env, int fd);
 int		ft_unset(t_info *info, t_env *env);
 void	ft_env(t_env *env, int fd);
-int		ft_exit(t_info *info);
+void	ft_exit(t_info *info);
 
 /* Ready structures for commands */
 t_info	*get_info_echo(void);
@@ -76,7 +76,7 @@ int		ch_pwd(t_env *env);
 void	print_my_env(t_env *env);
 
 /* Export functions */
-void	ft_change_elem(t_env **previous, t_env **first, t_env **second, t_env **start);
+void	ft_chng_elem(t_env **previous, t_env **first, t_env **second, t_env **start);
 t_env	*sort_env(t_env *start);
 t_env	*copy_env(t_env *env);
 void	print_export(t_env *env, int fd);
@@ -122,3 +122,8 @@ int			other_error(t_info *info);
 void		main_init_gnl(int *i, t_info *parsed, t_general *general);
 void		main_free_args_redirs(t_info *parsed, int j);
 void		listener(int signal);
+
+int	export_error(char *err, int fd, int i);
+void		listener(int signal);
+void		free_general(t_general *general);
+void		main_free_args_redirs(t_info *parsed, int j);

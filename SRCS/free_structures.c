@@ -1,22 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_work.c                                       :+:      :+:    :+:   */
+/*   free_structures.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/26 17:41:00 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 14:18:15 by dskittri         ###   ########.fr       */
+/*   Created: 2020/12/31 15:50:02 by dskittri          #+#    #+#             */
+/*   Updated: 2020/12/31 15:58:03 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "shell_header.h"
 
-void	print_my_env(t_env *env)
+void		free_general(t_general *general)
 {
-	while (env != NULL)
+	free(general->pipe_fd);
+	free(general->pipe_fd2);
+	free(general);
+}
+
+void		main_free_args_redirs(t_info *parsed, int j)
+{
+	if (parsed->args)
 	{
-		printf("env:  %s=%s\n", env->type, env->value);
-		env = env->next;
+		j = 0;
+		while (parsed->args[j])
+			free(parsed->args[j++]);
+		free(parsed->args);
+	}
+	if (parsed->redirs)
+	{
+		j = 0;
+		while (parsed->redirs[j])
+			free(parsed->redirs[j++]);
+		free(parsed->redirs);
 	}
 }

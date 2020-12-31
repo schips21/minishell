@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/dskittri/Desktop/minishell_full/SRCS/check_work.c
-shell_header.h
-/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
-
 /Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_cd.c
 ../shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
@@ -31,6 +27,10 @@ shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
 /Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_2.c
+../shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
+
+/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_3.c
 ../shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
@@ -58,11 +58,19 @@ shell_header.h
 ../shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/dskittri/Desktop/minishell_full/SRCS/env/env_change.c
-../shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/free_structures.c
+shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
-/Users/dskittri/Desktop/minishell_full/SRCS/info.c
+/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line.c
+shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
+
+/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_return.c
+shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
+
+/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_utils.c
 shell_header.h
 /Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
@@ -125,6 +133,10 @@ dirent.h
 -
 fcntl.h
 -
+
+/Users/dskittri/Desktop/minishell_full/SRCS/signals.c
+shell_header.h
+/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h
 
 /Users/dskittri/Desktop/minishell_full/SRCS/structures.h
 

@@ -143,33 +143,6 @@ minishell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/build
 .PHONY : minishell/fast
 
-SRCS/check_work.o: SRCS/check_work.c.o
-
-.PHONY : SRCS/check_work.o
-
-# target to build an object file
-SRCS/check_work.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/check_work.c.o
-.PHONY : SRCS/check_work.c.o
-
-SRCS/check_work.i: SRCS/check_work.c.i
-
-.PHONY : SRCS/check_work.i
-
-# target to preprocess a source file
-SRCS/check_work.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/check_work.c.i
-.PHONY : SRCS/check_work.c.i
-
-SRCS/check_work.s: SRCS/check_work.c.s
-
-.PHONY : SRCS/check_work.s
-
-# target to generate assembly for a file
-SRCS/check_work.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/check_work.c.s
-.PHONY : SRCS/check_work.c.s
-
 SRCS/commands/ft_cd.o: SRCS/commands/ft_cd.c.o
 
 .PHONY : SRCS/commands/ft_cd.o
@@ -331,6 +304,33 @@ SRCS/commands/ft_export_2.s: SRCS/commands/ft_export_2.c.s
 SRCS/commands/ft_export_2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.s
 .PHONY : SRCS/commands/ft_export_2.c.s
+
+SRCS/commands/ft_export_3.o: SRCS/commands/ft_export_3.c.o
+
+.PHONY : SRCS/commands/ft_export_3.o
+
+# target to build an object file
+SRCS/commands/ft_export_3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_export_3.c.o
+.PHONY : SRCS/commands/ft_export_3.c.o
+
+SRCS/commands/ft_export_3.i: SRCS/commands/ft_export_3.c.i
+
+.PHONY : SRCS/commands/ft_export_3.i
+
+# target to preprocess a source file
+SRCS/commands/ft_export_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_export_3.c.i
+.PHONY : SRCS/commands/ft_export_3.c.i
+
+SRCS/commands/ft_export_3.s: SRCS/commands/ft_export_3.c.s
+
+.PHONY : SRCS/commands/ft_export_3.s
+
+# target to generate assembly for a file
+SRCS/commands/ft_export_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/commands/ft_export_3.c.s
+.PHONY : SRCS/commands/ft_export_3.c.s
 
 SRCS/commands/ft_other_commands.o: SRCS/commands/ft_other_commands.c.o
 
@@ -494,59 +494,113 @@ SRCS/env/env_2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/env/env_2.c.s
 .PHONY : SRCS/env/env_2.c.s
 
-SRCS/env/env_change.o: SRCS/env/env_change.c.o
+SRCS/free_structures.o: SRCS/free_structures.c.o
 
-.PHONY : SRCS/env/env_change.o
-
-# target to build an object file
-SRCS/env/env_change.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/env/env_change.c.o
-.PHONY : SRCS/env/env_change.c.o
-
-SRCS/env/env_change.i: SRCS/env/env_change.c.i
-
-.PHONY : SRCS/env/env_change.i
-
-# target to preprocess a source file
-SRCS/env/env_change.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/env/env_change.c.i
-.PHONY : SRCS/env/env_change.c.i
-
-SRCS/env/env_change.s: SRCS/env/env_change.c.s
-
-.PHONY : SRCS/env/env_change.s
-
-# target to generate assembly for a file
-SRCS/env/env_change.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/env/env_change.c.s
-.PHONY : SRCS/env/env_change.c.s
-
-SRCS/info.o: SRCS/info.c.o
-
-.PHONY : SRCS/info.o
+.PHONY : SRCS/free_structures.o
 
 # target to build an object file
-SRCS/info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/info.c.o
-.PHONY : SRCS/info.c.o
+SRCS/free_structures.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/free_structures.c.o
+.PHONY : SRCS/free_structures.c.o
 
-SRCS/info.i: SRCS/info.c.i
+SRCS/free_structures.i: SRCS/free_structures.c.i
 
-.PHONY : SRCS/info.i
+.PHONY : SRCS/free_structures.i
 
 # target to preprocess a source file
-SRCS/info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/info.c.i
-.PHONY : SRCS/info.c.i
+SRCS/free_structures.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/free_structures.c.i
+.PHONY : SRCS/free_structures.c.i
 
-SRCS/info.s: SRCS/info.c.s
+SRCS/free_structures.s: SRCS/free_structures.c.s
 
-.PHONY : SRCS/info.s
+.PHONY : SRCS/free_structures.s
 
 # target to generate assembly for a file
-SRCS/info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/info.c.s
-.PHONY : SRCS/info.c.s
+SRCS/free_structures.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/free_structures.c.s
+.PHONY : SRCS/free_structures.c.s
+
+SRCS/get_next_line.o: SRCS/get_next_line.c.o
+
+.PHONY : SRCS/get_next_line.o
+
+# target to build an object file
+SRCS/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line.c.o
+.PHONY : SRCS/get_next_line.c.o
+
+SRCS/get_next_line.i: SRCS/get_next_line.c.i
+
+.PHONY : SRCS/get_next_line.i
+
+# target to preprocess a source file
+SRCS/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line.c.i
+.PHONY : SRCS/get_next_line.c.i
+
+SRCS/get_next_line.s: SRCS/get_next_line.c.s
+
+.PHONY : SRCS/get_next_line.s
+
+# target to generate assembly for a file
+SRCS/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line.c.s
+.PHONY : SRCS/get_next_line.c.s
+
+SRCS/get_next_line_return.o: SRCS/get_next_line_return.c.o
+
+.PHONY : SRCS/get_next_line_return.o
+
+# target to build an object file
+SRCS/get_next_line_return.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_return.c.o
+.PHONY : SRCS/get_next_line_return.c.o
+
+SRCS/get_next_line_return.i: SRCS/get_next_line_return.c.i
+
+.PHONY : SRCS/get_next_line_return.i
+
+# target to preprocess a source file
+SRCS/get_next_line_return.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_return.c.i
+.PHONY : SRCS/get_next_line_return.c.i
+
+SRCS/get_next_line_return.s: SRCS/get_next_line_return.c.s
+
+.PHONY : SRCS/get_next_line_return.s
+
+# target to generate assembly for a file
+SRCS/get_next_line_return.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_return.c.s
+.PHONY : SRCS/get_next_line_return.c.s
+
+SRCS/get_next_line_utils.o: SRCS/get_next_line_utils.c.o
+
+.PHONY : SRCS/get_next_line_utils.o
+
+# target to build an object file
+SRCS/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_utils.c.o
+.PHONY : SRCS/get_next_line_utils.c.o
+
+SRCS/get_next_line_utils.i: SRCS/get_next_line_utils.c.i
+
+.PHONY : SRCS/get_next_line_utils.i
+
+# target to preprocess a source file
+SRCS/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_utils.c.i
+.PHONY : SRCS/get_next_line_utils.c.i
+
+SRCS/get_next_line_utils.s: SRCS/get_next_line_utils.c.s
+
+.PHONY : SRCS/get_next_line_utils.s
+
+# target to generate assembly for a file
+SRCS/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/get_next_line_utils.c.s
+.PHONY : SRCS/get_next_line_utils.c.s
 
 SRCS/main.o: SRCS/main.c.o
 
@@ -844,6 +898,33 @@ SRCS/redirects.s: SRCS/redirects.c.s
 SRCS/redirects.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/redirects.c.s
 .PHONY : SRCS/redirects.c.s
+
+SRCS/signals.o: SRCS/signals.c.o
+
+.PHONY : SRCS/signals.o
+
+# target to build an object file
+SRCS/signals.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/signals.c.o
+.PHONY : SRCS/signals.c.o
+
+SRCS/signals.i: SRCS/signals.c.i
+
+.PHONY : SRCS/signals.i
+
+# target to preprocess a source file
+SRCS/signals.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/signals.c.i
+.PHONY : SRCS/signals.c.i
+
+SRCS/signals.s: SRCS/signals.c.s
+
+.PHONY : SRCS/signals.s
+
+# target to generate assembly for a file
+SRCS/signals.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/SRCS/signals.c.s
+.PHONY : SRCS/signals.c.s
 
 my_libft/ft_atoi.o: my_libft/ft_atoi.c.o
 
@@ -2006,87 +2087,6 @@ my_libft/ft_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/ft_toupper.c.s
 .PHONY : my_libft/ft_toupper.c.s
 
-my_libft/get_next_line.o: my_libft/get_next_line.c.o
-
-.PHONY : my_libft/get_next_line.o
-
-# target to build an object file
-my_libft/get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line.c.o
-.PHONY : my_libft/get_next_line.c.o
-
-my_libft/get_next_line.i: my_libft/get_next_line.c.i
-
-.PHONY : my_libft/get_next_line.i
-
-# target to preprocess a source file
-my_libft/get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line.c.i
-.PHONY : my_libft/get_next_line.c.i
-
-my_libft/get_next_line.s: my_libft/get_next_line.c.s
-
-.PHONY : my_libft/get_next_line.s
-
-# target to generate assembly for a file
-my_libft/get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line.c.s
-.PHONY : my_libft/get_next_line.c.s
-
-my_libft/get_next_line_return.o: my_libft/get_next_line_return.c.o
-
-.PHONY : my_libft/get_next_line_return.o
-
-# target to build an object file
-my_libft/get_next_line_return.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.o
-.PHONY : my_libft/get_next_line_return.c.o
-
-my_libft/get_next_line_return.i: my_libft/get_next_line_return.c.i
-
-.PHONY : my_libft/get_next_line_return.i
-
-# target to preprocess a source file
-my_libft/get_next_line_return.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.i
-.PHONY : my_libft/get_next_line_return.c.i
-
-my_libft/get_next_line_return.s: my_libft/get_next_line_return.c.s
-
-.PHONY : my_libft/get_next_line_return.s
-
-# target to generate assembly for a file
-my_libft/get_next_line_return.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.s
-.PHONY : my_libft/get_next_line_return.c.s
-
-my_libft/get_next_line_utils.o: my_libft/get_next_line_utils.c.o
-
-.PHONY : my_libft/get_next_line_utils.o
-
-# target to build an object file
-my_libft/get_next_line_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o
-.PHONY : my_libft/get_next_line_utils.c.o
-
-my_libft/get_next_line_utils.i: my_libft/get_next_line_utils.c.i
-
-.PHONY : my_libft/get_next_line_utils.i
-
-# target to preprocess a source file
-my_libft/get_next_line_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.i
-.PHONY : my_libft/get_next_line_utils.c.i
-
-my_libft/get_next_line_utils.s: my_libft/get_next_line_utils.c.s
-
-.PHONY : my_libft/get_next_line_utils.s
-
-# target to generate assembly for a file
-my_libft/get_next_line_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minishell.dir/build.make CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.s
-.PHONY : my_libft/get_next_line_utils.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2096,9 +2096,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... minishell"
-	@echo "... SRCS/check_work.o"
-	@echo "... SRCS/check_work.i"
-	@echo "... SRCS/check_work.s"
 	@echo "... SRCS/commands/ft_cd.o"
 	@echo "... SRCS/commands/ft_cd.i"
 	@echo "... SRCS/commands/ft_cd.s"
@@ -2117,6 +2114,9 @@ help:
 	@echo "... SRCS/commands/ft_export_2.o"
 	@echo "... SRCS/commands/ft_export_2.i"
 	@echo "... SRCS/commands/ft_export_2.s"
+	@echo "... SRCS/commands/ft_export_3.o"
+	@echo "... SRCS/commands/ft_export_3.i"
+	@echo "... SRCS/commands/ft_export_3.s"
 	@echo "... SRCS/commands/ft_other_commands.o"
 	@echo "... SRCS/commands/ft_other_commands.i"
 	@echo "... SRCS/commands/ft_other_commands.s"
@@ -2135,12 +2135,18 @@ help:
 	@echo "... SRCS/env/env_2.o"
 	@echo "... SRCS/env/env_2.i"
 	@echo "... SRCS/env/env_2.s"
-	@echo "... SRCS/env/env_change.o"
-	@echo "... SRCS/env/env_change.i"
-	@echo "... SRCS/env/env_change.s"
-	@echo "... SRCS/info.o"
-	@echo "... SRCS/info.i"
-	@echo "... SRCS/info.s"
+	@echo "... SRCS/free_structures.o"
+	@echo "... SRCS/free_structures.i"
+	@echo "... SRCS/free_structures.s"
+	@echo "... SRCS/get_next_line.o"
+	@echo "... SRCS/get_next_line.i"
+	@echo "... SRCS/get_next_line.s"
+	@echo "... SRCS/get_next_line_return.o"
+	@echo "... SRCS/get_next_line_return.i"
+	@echo "... SRCS/get_next_line_return.s"
+	@echo "... SRCS/get_next_line_utils.o"
+	@echo "... SRCS/get_next_line_utils.i"
+	@echo "... SRCS/get_next_line_utils.s"
 	@echo "... SRCS/main.o"
 	@echo "... SRCS/main.i"
 	@echo "... SRCS/main.s"
@@ -2174,6 +2180,9 @@ help:
 	@echo "... SRCS/redirects.o"
 	@echo "... SRCS/redirects.i"
 	@echo "... SRCS/redirects.s"
+	@echo "... SRCS/signals.o"
+	@echo "... SRCS/signals.i"
+	@echo "... SRCS/signals.s"
 	@echo "... my_libft/ft_atoi.o"
 	@echo "... my_libft/ft_atoi.i"
 	@echo "... my_libft/ft_atoi.s"
@@ -2303,15 +2312,6 @@ help:
 	@echo "... my_libft/ft_toupper.o"
 	@echo "... my_libft/ft_toupper.i"
 	@echo "... my_libft/ft_toupper.s"
-	@echo "... my_libft/get_next_line.o"
-	@echo "... my_libft/get_next_line.i"
-	@echo "... my_libft/get_next_line.s"
-	@echo "... my_libft/get_next_line_return.o"
-	@echo "... my_libft/get_next_line_return.i"
-	@echo "... my_libft/get_next_line_return.s"
-	@echo "... my_libft/get_next_line_utils.o"
-	@echo "... my_libft/get_next_line_utils.i"
-	@echo "... my_libft/get_next_line_utils.s"
 .PHONY : help
 
 

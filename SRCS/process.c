@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 12:36:58 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 13:38:54 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/31 15:07:39 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,7 @@ int		parents_cmnd_exec(t_info *info, t_env *env)
 	else if (ft_strncmp(info->args[0], "unset", 6) == 0)
 		res = ft_unset(info, env);
 	else if (ft_strncmp(info->args[0], "exit", 5) == 0)
-		res = ft_exit(info);
+		ft_exit(info);
 	return (res);
 }
 
@@ -239,21 +239,12 @@ int		command_execution(t_info *info, t_env *env, t_general *general)
 	signal(SIGINT, SIG_IGN);//
 	signal(SIGINT, listener2);//
 	waitpid(pid, &stat, WUNTRACED);//ошибка не чувствительня к сигналам
-	//wait(&stat);
-	//stat = WEXITSTATUS(stat);
-	//printf("%i\n", stat);
 	if (WIFSIGNALED(stat))
 	{
 		if (WTERMSIG(stat) == 2)
-		{
 			stat = 130;
-			//printf("130\n");
-		}
 		else if (WTERMSIG(stat) == 3)
-		{
 			stat = 131;
-			//printf("131\n");
-		}
 	}
 	else
 		stat = WEXITSTATUS(stat);

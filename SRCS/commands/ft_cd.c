@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 18:32:11 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/29 14:56:35 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/31 14:55:44 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ char	*find_env(t_env *env, char *type)
 	while (env != NULL)
 	{
 		len = ft_bigger_str(env->type, type);
-		if(ft_strncmp(env->type, type, len) == 0)
+		if (ft_strncmp(env->type, type, len) == 0)
 			return (env->value);
 		env = env->next;
 	}
 	return (NULL);
 }
 
-int		cd_error()
+int		cd_error(void)
 {
 	ft_putstr_fd("minishell: cd: ", 2);
 	ft_putendl_fd(strerror(errno), 2);
@@ -37,7 +37,7 @@ int		ch_pwd(t_env *env)
 {
 	while (env != NULL)
 	{
-		if(ft_strncmp(env->type, "PWD", 4) == 0)
+		if (ft_strncmp(env->type, "PWD", 4) == 0)
 		{
 			free(env->value);
 			env->value = getcwd(NULL, 0);
@@ -48,6 +48,21 @@ int		ch_pwd(t_env *env)
 		env = env->next;
 	}
 	return (0);
+}
+
+int		ft_cd2(char *old_pwd, int res, t_info *info)
+{
+	free(old_pwd);
+	ft_putstr_fd("minishell: cd: ", 2);
+	if (res == -1)
+		ft_putendl_fd("HOME not set", 2);
+	else
+	{
+		ft_putstr_fd(info->args[1], 2);
+		ft_putstr_fd(": ", 2);
+		ft_putendl_fd(strerror(errno), 2);
+	}
+	return (1);
 }
 
 int		ft_cd(t_info *info, t_env *env)
@@ -74,18 +89,6 @@ int		ft_cd(t_info *info, t_env *env)
 	else
 		chdir(info->args[1]);
 	if (errno != 0)
-	{
-		free(old_pwd);
-		ft_putstr_fd("minishell: cd: ", 2);
-		if (res == -1)
-			ft_putendl_fd("HOME not set", 2);
-		else
-		{
-			ft_putstr_fd(info->args[1], 2);
-			ft_putstr_fd(": ", 2);
-			ft_putendl_fd(strerror(errno), 2);
-		}
-		return (1);
-	}
+		return (ft_cd2(old_pwd, res, info));
 	return (ch_pwd(env));
 }

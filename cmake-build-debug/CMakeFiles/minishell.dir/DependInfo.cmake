@@ -4,21 +4,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/dskittri/Desktop/minishell_full/SRCS/check_work.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/check_work.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_cd.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_cd.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_echo.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_echo.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_env.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_env.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_exit.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_exit.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_export.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_2.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_export_2.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_3.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_export_3.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_other_commands.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_other_commands_2.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_other_commands_2.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_pwd.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_pwd.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_unset.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/commands/ft_unset.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/env/env.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/env/env.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/env/env_2.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/env/env_2.c.o"
-  "/Users/dskittri/Desktop/minishell_full/SRCS/env/env_change.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/env/env_change.c.o"
-  "/Users/dskittri/Desktop/minishell_full/SRCS/info.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/info.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/free_structures.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/free_structures.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/get_next_line.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_return.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/get_next_line_return.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_utils.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/get_next_line_utils.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/main.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/main.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/parser.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/parser_check_line.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser_check_line.c.o"
@@ -30,6 +32,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dskittri/Desktop/minishell_full/SRCS/parser_utils.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/parser_utils.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/process.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/process.c.o"
   "/Users/dskittri/Desktop/minishell_full/SRCS/redirects.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/redirects.c.o"
+  "/Users/dskittri/Desktop/minishell_full/SRCS/signals.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/SRCS/signals.c.o"
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_atoi.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_atoi.c.o"
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_bzero.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_bzero.c.o"
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_calloc.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_calloc.c.o"
@@ -73,9 +76,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_substr.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_substr.c.o"
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_tolower.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_tolower.c.o"
   "/Users/dskittri/Desktop/minishell_full/my_libft/ft_toupper.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/ft_toupper.c.o"
-  "/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/get_next_line.c.o"
-  "/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line_return.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/get_next_line_return.c.o"
-  "/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line_utils.c" "/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir/my_libft/get_next_line_utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

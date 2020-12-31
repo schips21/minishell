@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 14:39:42 by schips            #+#    #+#             */
-/*   Updated: 2020/12/29 21:47:27 by schips           ###   ########.fr       */
+/*   Updated: 2020/12/31 16:21:10 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int		parser_return(char *line, t_info *parsed, int i)
 {
+	parsed->in = 0;
+	parsed->out = 1;
 	if (!parsed->args || !parsed->args[0])
 		return (-1);
 	count_args(parsed);

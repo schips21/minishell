@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/check_work.c">
-			<Option target="minishell"/>
-		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_cd.c">
 			<Option target="minishell"/>
 		</Unit>
@@ -101,6 +98,9 @@
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_2.c">
+			<Option target="minishell"/>
+		</Unit>
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_export_3.c">
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/commands/ft_other_commands.c">
@@ -121,10 +121,16 @@
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/env/env_2.c">
 			<Option target="minishell"/>
 		</Unit>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/env/env_change.c">
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/free_structures.c">
 			<Option target="minishell"/>
 		</Unit>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/info.c">
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line.c">
+			<Option target="minishell"/>
+		</Unit>
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_return.c">
+			<Option target="minishell"/>
+		</Unit>
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/get_next_line_utils.c">
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/main.c">
@@ -161,6 +167,9 @@
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/shell_header.h">
+			<Option target="minishell"/>
+		</Unit>
+		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/signals.c">
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/SRCS/structures.h">
@@ -293,15 +302,6 @@
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/my_libft/ft_toupper.c">
-			<Option target="minishell"/>
-		</Unit>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line.c">
-			<Option target="minishell"/>
-		</Unit>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line_return.c">
-			<Option target="minishell"/>
-		</Unit>
-		<Unit filename="/Users/dskittri/Desktop/minishell_full/my_libft/get_next_line_utils.c">
 			<Option target="minishell"/>
 		</Unit>
 		<Unit filename="/Users/dskittri/Desktop/minishell_full/my_libft/libft.h">

@@ -6,7 +6,7 @@
 /*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 19:41:49 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/29 19:41:52 by dskittri         ###   ########.fr       */
+/*   Updated: 2020/12/31 15:23:51 by dskittri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,20 @@ char			*ft_strjoin_path(char const *s1, char const *s2, char a)
 		return (pointer);
 	}
 	return (0);
+}
+
+void			free_arr(char **array)
+{
+	int			i;
+
+	i = 0;
+	if (array != NULL)
+	{
+		while (array[i] != NULL)
+		{
+			free(array[i]);
+			i++;
+		}
+		free(array);
+	}
 }

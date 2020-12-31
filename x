@@ -1,0 +1,10 @@
+CMakeLists.txt
+Makefile
+SRCS
+cmake-build-debug
+comments
+minishell
+minishell.dSYM
+my_libft
+x
+y
