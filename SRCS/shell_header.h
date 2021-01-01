@@ -5,11 +5,16 @@
 #include<errno.h>
 #include <dirent.h>
 #include <fcntl.h>
+#include "signal.h"
+#include <sys/types.h>
+#include <sys/wait.h>
 
 extern int WRITE_END;
 extern int READ_END;
 int g_res;
 int g_ctrl_d;
+char *g_line;
+
 
 //mem_realloc.c
 int 	new_word_next(t_info *parsed, int i, int j);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: schips <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 14:40:59 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 14:18:14 by dskittri         ###   ########.fr       */
+/*   Updated: 2021/01/01 20:21:54 by schips           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ int				get_next_line(int fd, char **line)
 	static char	*residue[256];
 	char		buffer[BUFFER_SIZE + 1];
 	
+	g_ctrl_d = 0;
 	write(1, "minishell: ", 11);
 	//write(1, "minishell gnl: ", 15);
 	if (line == NULL || (count = read(fd, buffer, 0) < 0))
@@ -95,6 +96,8 @@ int				get_next_line(int fd, char **line)
 		{
 			ft_putstr_fd("  \b\b", 2);
 			buffer[1] = '\0';
+			g_ctrl_d = 1;
+			// printf("g_ctrl_d in gnl is %d\n", g_ctrl_d);
 			continue;
 		}
 		else if (count == 0)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: schips <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 19:42:26 by schips            #+#    #+#             */
-/*   Updated: 2020/12/31 17:17:25 by dskittri         ###   ########.fr       */
+/*   Updated: 2021/01/01 20:23:11 by schips           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,13 +179,13 @@ int			main(int argc, char **argv, char *envp[])
 	int tmp_pipe;
 	int dup_in;
 	int dup_out;
-	char *line;
+	// char *line;
 
-	line = NULL;
+	// line = NULL;
 	env = NULL;
 	env = get_env(envp, env);
-	signal(SIGINT, listener);
-	signal(SIGQUIT, listener);
+	signal(SIGINT, listener); //ctrl c
+	signal(SIGQUIT, listener); //ctrl /
 	general = fullfill_general();
 	if (general == NULL)
 		return (-1);
@@ -199,9 +199,20 @@ int			main(int argc, char **argv, char *envp[])
 		return (0);
 	parsed.cur_i = 0;
 	parsed.pipe_prev = 0;
-	g_ctrl_d = 0;
-	while (get_next_line(0, &line))
+	while (get_next_line(0, &g_line))
 	{
+		signal(SIGINT, listener);
+		signal(SIGQUIT, listener);
+		if (g_ctrl_d == 2)
+		{
+			if (g_line)
+			{
+				free(g_line);
+				g_line = NULL;
+			}
+			g_ctrl_d = 0;
+			continue;
+		}
 		main_init_gnl(&i, &parsed, general);
 		while (i != 0)
 		{
@@ -210,9 +221,9 @@ int			main(int argc, char **argv, char *envp[])
 			ft_bzero(&parsed, sizeof(parsed));
 			parsed.cur_i = tmp;
 			parsed.pipe_prev = tmp_pipe;
-			if (parser_check_line(line, &parsed, 0) == 1)
+			if (parser_check_line(g_line, &parsed, 0) == 1)
 				break ;
-			i = parser(line, &parsed, env);
+			i = parser(g_line, &parsed, env);
 			parsed.in = 0;
 			parsed.out = 1;
 			parsed.envp = envp;
@@ -222,11 +233,12 @@ int			main(int argc, char **argv, char *envp[])
 				parsed.args = NULL;
 				i = 0;
 			}
-			if (g_ctrl_d == 1)
-			{
-				//очищение
-				break;
-			}
+			// if (g_ctrl_d == 1)
+			// {
+			// 	signal(SIGINT, listener); //ctrl c
+			// 	signal(SIGQUIT, listener);
+			// 	break;
+			// }
 			g_res = process(env, &parsed, general);
 			if (parsed.right_redir == 1)
 			{
@@ -246,10 +258,10 @@ int			main(int argc, char **argv, char *envp[])
 		}
 		dup2(dup_in, 0);
 		dup2(dup_out, 1);
-		if (line)
+		if (g_line)
 		{
-			free(line);
-			line = NULL;
+			free(g_line);
+			g_line = NULL;
 		}
 	}
 	dup2(parsed.dup_in, 0);

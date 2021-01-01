@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_other_commands.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: schips <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 19:41:57 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 15:25:11 by dskittri         ###   ########.fr       */
+/*   Updated: 2021/01/01 17:43:21 by schips           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,10 @@ int					if_file_here(t_info *info, DIR *new)
 	while ((files = readdir(new)) != NULL && errno == 0)
 	{
 		len = ft_strlen(info->args[0]);
-		if (len == files->d_namlen &&
-			(ft_strncmp(files->d_name, info->args[0], len)) == 0)
+		// у меня не компилится с files->d_namlen
+		// if (len == files->d_namlen &&
+		// 	(ft_strncmp(files->d_name, info->args[0], len)) == 0)
+		if (len == ft_strlen(files->d_name) && (ft_strncmp(files->d_name, info->args[0], len)) == 0)
 		{
 			closedir(new);
 			return (1);
