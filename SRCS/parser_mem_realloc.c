@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   parser_mem_realloc.c                               :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/28 22:24:32 by schips            #+#    #+#             */
-/*   Updated: 2020/12/28 22:24:33 by schips           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "shell_header.h"
 
 int		new_word_next(t_info *parsed, int i, int j)
@@ -96,6 +84,7 @@ int		make_type(t_info *parsed)
 	new[i - 1] = NULL;
 	new[0] = parsed->args[0];
 	j = 1;
+	free(parsed->args[1]);
 	while (j < i - 1)
 	{
 		new[j] = parsed->args[j + 1];

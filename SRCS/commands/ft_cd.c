@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_cd.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/26 18:32:11 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 14:55:44 by dskittri         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../shell_header.h"
 
 char	*find_env(t_env *env, char *type)
@@ -50,9 +38,8 @@ int		ch_pwd(t_env *env)
 	return (0);
 }
 
-int		ft_cd2(char *old_pwd, int res, t_info *info)
+int		ft_cd2(int res, t_info *info)
 {
-	free(old_pwd);
 	ft_putstr_fd("minishell: cd: ", 2);
 	if (res == -1)
 		ft_putendl_fd("HOME not set", 2);
@@ -82,13 +69,13 @@ int		ft_cd(t_info *info, t_env *env)
 			free(env_old_pwd->value);
 			env_old_pwd->value = NULL;
 		}
-		env_old_pwd->value = ft_strdup(old_pwd);
+		env_old_pwd->value = old_pwd;
 	}
 	if (info->args_num == 0)
 		res = chdir(find_env(env, "HOME"));
 	else
 		chdir(info->args[1]);
 	if (errno != 0)
-		return (ft_cd2(old_pwd, res, info));
+		return (ft_cd2(res, info));
 	return (ch_pwd(env));
 }

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   env_2.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/26 17:41:15 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 15:31:36 by dskittri         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../shell_header.h"
 
 t_env		*get_env_type_value(char **envp, int count)
@@ -51,9 +39,9 @@ t_env		*get_env(char **envp, t_env *first)
 {
 	t_env	*env;
 	int		count;
-	char	*old_pwd;
 
 	count = 0;
+	first = NULL;
 	first = get_env_type_value(envp, count);
 	if (first == NULL)
 		return (NULL);

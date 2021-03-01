@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_other_commands.c                                :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: schips <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/29 19:41:57 by dskittri          #+#    #+#             */
-/*   Updated: 2021/01/01 17:43:21 by schips           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../shell_header.h"
 
 int					env_len_class_1(t_env *env)
@@ -66,9 +54,18 @@ int					error_errno(t_info *info)
 
 int					other_error(t_info *info)
 {
+	int		len;
+
+	len = ft_strlen(info->args[0]);
 	ft_putstr_fd("minishell: ", 2);
 	ft_putstr_fd(info->args[0], 2);
-	ft_putendl_fd(": command not found", 2);
+	if (errno == 0)
+		ft_putendl_fd(": command not found", 2);
+	else
+	{
+		ft_putstr_fd(": ", 2);
+		ft_putendl_fd(strerror(errno), 2);
+	}
 	exit(127);
 	return (errno);
 }
@@ -78,13 +75,13 @@ int					if_file_here(t_info *info, DIR *new)
 	struct dirent	*files;
 	int				len;
 
-	while ((files = readdir(new)) != NULL && errno == 0)
+	if (new == NULL)
+		return (0);
+	while (new != NULL && (files = readdir(new)) != NULL && errno == 0)
 	{
 		len = ft_strlen(info->args[0]);
-		// у меня не компилится с files->d_namlen
-		// if (len == files->d_namlen &&
-		// 	(ft_strncmp(files->d_name, info->args[0], len)) == 0)
-		if (len == ft_strlen(files->d_name) && (ft_strncmp(files->d_name, info->args[0], len)) == 0)
+		if (len == files->d_namlen &&
+			(ft_strncmp(files->d_name, info->args[0], len)) == 0)
 		{
 			closedir(new);
 			return (1);

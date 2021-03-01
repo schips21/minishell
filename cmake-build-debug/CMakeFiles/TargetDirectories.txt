@@ -1,3 +1,0 @@
-/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dskittri/Desktop/minishell_full/cmake-build-debug/CMakeFiles/minishell.dir

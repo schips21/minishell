@@ -1,25 +1,15 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   parser_check_line.c                                :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/28 22:21:56 by schips            #+#    #+#             */
-/*   Updated: 2020/12/28 22:21:59 by schips           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "shell_header.h"
 
 int		parser_check_line_skip(char *line, int *i, t_line_check *line_check)
 {
 	if (line[*i] == '\\')
 	{
-		line_check->symb++;
+		line_check->symb += 2;
 		(*i)++;
+		if (line[*i] == '\0')
+			return (1);
 	}
-	if (line[*i] == '\"')
+	else if (line[*i] == '\"')
 	{
 		if ((parser_check_line_skip_quot(line, i, line_check)) == 1)
 			return (1);
@@ -55,7 +45,7 @@ int		parser_check_line_util(char *line, t_line_check *line_check, int *i)
 	return (0);
 }
 
-int		parser_check_l_red(char *l, t_info *info, int *i, t_line_check *l_check)
+int		parser_check_l_red(char *l, int *i, t_line_check *l_check)
 {
 	(*i)++;
 	if (l[*i] == '>')
@@ -67,7 +57,7 @@ int		parser_check_l_red(char *l, t_info *info, int *i, t_line_check *l_check)
 	return (0);
 }
 
-int		parser_check_line(char *line, t_info *info, int i)
+int		parser_check_line(char *line, int i)
 {
 	t_line_check	line_check;
 
@@ -87,7 +77,7 @@ int		parser_check_line(char *line, t_info *info, int i)
 		}
 		else if (line[i] == '>')
 		{
-			if ((parser_check_l_red(line, info, &i, &line_check)) == 1)
+			if ((parser_check_l_red(line, &i, &line_check)) == 1)
 				return (parser_check_line_ret());
 		}
 		if (line[i] != '\0')

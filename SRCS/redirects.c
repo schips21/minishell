@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   redirects.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: schips <schips@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/04 13:02:44 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/29 21:46:06 by schips           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "shell_header.h"
 
 void		redirect_processing_out(t_info *info, int i)
@@ -50,6 +38,7 @@ int			redirect_processing(t_info *info)
 			redirect_processing_in(info, i);
 		if (errno != 0)
 		{
+			ft_putstr_fd("minishell: ", 2);
 			ft_putstr_fd(info->redirs[i + 1], 2);
 			ft_putstr_fd(": ", 2);
 			ft_putendl_fd(strerror(errno), 2);

@@ -1,20 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   signals.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: schips <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/31 15:50:37 by dskittri          #+#    #+#             */
-/*   Updated: 2021/01/01 20:21:59 by schips           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "shell_header.h"
 
-#include <stdio.h>
-
-void		listener(int signal)
+void	listener(int signal)
 {
 	if (signal == SIGINT)
 	{
@@ -27,7 +13,23 @@ void		listener(int signal)
 	}
 	else if (signal == SIGQUIT)
 	{
-		// g_ctrl_d = 1;
 		write(1, "\b\b  \b\b", 6);
 	}
+}
+
+int		signals_in_parent(int stat, t_general *general)
+{
+	if (WIFSIGNALED(stat))
+	{
+		if (WTERMSIG(stat) == 2)
+			stat = 130;
+		else if (WTERMSIG(stat) == 3)
+			stat = 131;
+		general->flag = 1;
+	}
+	else
+		stat = WEXITSTATUS(stat);
+	signal(SIGINT, listener);
+	signal(SIGQUIT, listener);
+	return (stat);
 }

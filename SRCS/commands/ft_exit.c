@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_exit.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dskittri <dskittri@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/29 19:41:32 by dskittri          #+#    #+#             */
-/*   Updated: 2020/12/31 15:12:28 by dskittri         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../shell_header.h"
 
 int		ft_exit2(t_info *info, int i)
@@ -34,15 +22,19 @@ int		ft_exit2(t_info *info, int i)
 	return (g_res);
 }
 
-void	ft_exit(t_info *info)
+void	ft_exit_3(t_info *info, t_general *general)
+{
+	if (general->other_command == 0)
+		ft_putstr_fd("exit\n", 1);
+	exit(info->res_prev);
+}
+
+void	ft_exit(t_info *info, t_general *general)
 {
 	int i;
 
 	if (info->args_num == 0)
-	{
-		ft_putstr_fd("exit\n", 2);
-		exit(info->res_prev);
-	}
+		ft_exit_3(info, general);
 	else
 	{
 		i = 0;
